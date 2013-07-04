@@ -1,4 +1,4 @@
-Installation Guide
+﻿Ubuntu Server 12.04 Installation Guide
 Note: For this assignment we have selected Ubuntu Server based off the roubustness of its support and documentation.
 
 Creating a bootable USB stick on Windows:
