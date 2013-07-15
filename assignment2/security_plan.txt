@@ -1,0 +1,42 @@
+-Security Updates
+Primary Security: sudo unattended-upgrade
+This can be configured to update automatically or we could call it manually with this command.
+
+Ubuntu ships with a no open ports policy, meanthing that after you install the machine -- be
+it an Ubuntu desktop or server -- no applications will be accepting connections from the
+internet by default.  Security updates are also guarenteed for at least 18 months after each release
+and are free.
+
+-User Account Administration
+Ubuntu doesn't enable the root, or administrator about, by default.  We will be choosing to keep
+this the same.  Instead, we added users inside of the admin group and use the sudo command to
+preform system administraton tasks.  This isn't just a workaround for giving people root access, 
+it can also handle fine-grain permissions.
+
+-Filesystem Security
+We are discussing the possibility of giving the /home, /tmp and /var directories their own
+partitions and securring these partitions through mount options.  We wish to look into the
+following mount options:
+
+	+nodev:  A file system mountes with this option will not alloe the use or creation of special
+		"device" files.  Allowing the filesystem to interprate of block or character special devices
+		can poses porential security risks.
+	+nosuid:  This barrs the setgid bit which allows certain files to be flagged in a way that lets 
+		anyone execute them with the permissions of another user or group. Allowing this behavior outside
+		of the directiories that hold the system binaries decreases security.
+	+noexec: Users will not be able to run any executables located on it.
+	+noatime: Tells the filesystem not to keep record of when files were last accessed.  It lessens
+		the security throgh limiting the amount of information avaliable in the event of a security incident
+		but could be an acceptable trade-off for speed.
+
+-System Resource Limits
+By default, Linux will not impose any resource limits on user processes.  This means the user is free
+to fill up all the working memory of the machine.  We can fix this by setting up our own resource
+limits by editing the /etc/security/limits.conf file and setting up, at minimum, the nproc limit.
+
+-System Log Files
+Keeping a close eye on .log files, located primarily in /var/log.  There are third party tools that can
+help with this.  We will start looking into those.
+
+-Note: Also, should look into the iptables command which is the front end to 
+	the Linux firewall tables.
