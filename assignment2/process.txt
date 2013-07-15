@@ -1,0 +1,170 @@
+top - 04:22:04 up 5 min,  1 user,  
+load average: 0.00, 0.02, 0.02
+
+Tasks:  78 total,   1 running,  77 sleeping,   0 stopped,   0 
+zombie
+Cpu(s):  0.2%us,  0.7%sy,  0.0%ni, 97.9%id,  1.0%wa,  0.0%hi,  0.1%si,  0.0%st
+
+Mem:   4058728k total,   124668k used,  3934060k free,    13972k 
+buffers
+Swap:  4116476k total,        0k used,  4116476k free,    71440k cached
+
+
+
+
+PID USER      PR  NI  VIRT  RES  SHR S %CPU %MEM    TIME+  COMMAND                                                                                            
+    
+1 root      20   0  3520 1988 1336 S    0  0.0   0:01.97 init                                                                                               
+    
+2 root      20   0     0    0    0 S    0  0.0   0:00.00 kthreadd                                                                                           
+    
+3 root      20   0     0    0    0 S    0  0.0   0:00.00 ksoftirqd/0                                                                                        
+    
+5 root      20   0     0    0    0 S    0  0.0   0:00.97 kworker/u:0                                                                                        
+    
+6 root      RT   0     0    0    0 S    0  0.0   0:00.00 migration/0                                                                                        
+    
+7 root      RT   0     0    0    0 S    0  0.0   0:00.00 watchdog/0                                                                                         
+    
+8 root      RT   0     0    0    0 S    0  0.0   0:00.02 migration/1                                                                                        
+   
+10 root      20   0     0    0    0 S    0  0.0   0:00.02 ksoftirqd/1                                                                                        
+   
+11 root      RT   0     0    0    0 S    0  0.0   0:00.00 watchdog/1                                                                                         
+   
+12 root       0 -20     0    0    0 S    0  0.0   0:00.00 cpuset                                                                                             
+   
+13 root       0 -20     0    0    0 S    0  0.0   0:00.00 khelper                                                                                            
+   
+14 root      20   0     0    0    0 S    0  0.0   0:00.00 kdevtmpfs                                                                                          
+   
+15 root       0 -20     0    0    0 S    0  0.0   0:00.00 netns                                                                                              
+   
+17 root      20   0     0    0    0 S    0  0.0   0:00.00 sync_supers                                                                                        
+   
+18 root      20   0     0    0    0 S    0  0.0   0:00.00 bdi-default                                                                                        
+   
+19 root       0 -20     0    0    0 S    0  0.0   0:00.00 kintegrityd                                                                                        
+   
+20 root       0 -20     0    0    0 S    0  0.0   0:00.00 kblockd                                                                                            
+   
+21 root       0 -20     0    0    0 S    0  0.0   0:00.00 ata_sff                                                                                            
+   
+22 root      20   0     0    0    0 S    0  0.0   0:00.00 khubd                                                                                              
+   
+23 root       0 -20     0    0    0 S    0  0.0   0:00.00 md                                                                                                 
+   
+24 root      20   0     0    0    0 S    0  0.0   0:00.11 kworker/0:1                                                                                        
+   
+25 root      20   0     0    0    0 S    0  0.0   0:00.00 kworker/1:1                                                                                        
+   
+26 root      20   0     0    0    0 S    0  0.0   0:00.00 khungtaskd                                                                                         
+   
+27 root      20   0     0    0    0 S    0  0.0   0:00.00 kswapd0                                                                                            
+   
+28 root      25   5     0    0    0 S    0  0.0   0:00.00 ksmd                                                                                               
+   
+29 root      39  19     0    0    0 S    0  0.0   0:00.00 khugepaged                                                                                         
+   
+30 root      20   0     0    0    0 S    0  0.0   0:00.00 fsnotify_mark                                                                                      
+   
+31 root      20   0     0    0    0 S    0  0.0   0:00.00 ecryptfs-kthrea                                                                                    
+   
+32 root       0 -20     0    0    0 S    0  0.0   0:00.00 crypto                                                                                             
+   
+41 root       0 -20     0    0    0 S    0  0.0   0:00.00 kthrotld                                                                                           
+   
+43 root      20   0     0    0    0 S    0  0.0   0:00.00 scsi_eh_0                                                                                          
+   
+44 root      20   0     0    0    0 S    0  0.0   0:00.00 scsi_eh_1                                                                                          
+   
+46 root      20   0     0    0    0 S    0  0.0   0:00.00 kworker/u:3                                                                                        
+   
+47 root      20   0     0    0    0 S    0  0.0   0:00.00 scsi_eh_2                                                                                          
+   
+48 root      20   0     0    0    0 S    0  0.0   0:00.00 scsi_eh_3                                                                                          
+   
+50 root       0 -20     0    0    0 S    0  0.0   0:00.00 binder                                                                                             
+   
+70 root       0 -20     0    0    0 S    0  0.0   0:00.00 deferwq                                                                                            
+   
+71 root       0 -20     0    0    0 S    0  0.0   0:00.00 charger_manager                                                                                    
+   
+72 root       0 -20     0    0    0 S    0  0.0   0:00.00 devfreq_wq                                                                                         
+   
+74 root      20   0     0    0    0 S    0  0.0   0:00.00 kworker/0:2                                                                                        
+  
+117 root      20   0     0    0    0 S    0  0.0   0:00.08 kworker/1:2                                                                                        
+  
+197 root       0 -20     0    0    0 S    0  0.0   0:00.00 firewire                                                                                           
+  
+213 root       0 -20     0    0    0 S    0  0.0   0:00.00 kdmflush                                                                                           
+  
+222 root       0 -20     0    0    0 S    0  0.0   0:00.00 kdmflush                                                                                           
+  
+272 root      20   0     0    0    0 S    0  0.0   0:00.00 jbd2/dm-0-8                                                                                        
+  
+273 root       0 -20     0    0    0 S    0  0.0   0:00.00 ext4-dio-unwrit                                                                                    
+  
+293 root      20   0  4640 1388 1092 S    0  0.0   0:00.03 mountall                                                                                           
+  
+361 root      20   0  2836  604  456 S    0  0.0   0:00.07 upstart-udev-br                                                                                    
+  
+363 root      20   0  3104 1308  776 S    0  0.0   0:00.05 udevd                                                                                              
+  
+441 root       0 -20     0    0    0 S    0  0.0   0:00.00 kpsmoused                                                                                          
+  
+461 root      20   0  3104  896  364 S    0  0.0   0:00.00 udevd                                                                                              
+  
+462 root      20   0  3024  828  328 S    0  0.0   0:00.00 udevd                                                                                              
+  
+471 root       0 -20     0    0    0 S    0  0.0   0:00.00 hd-audio0                                                                                          
+  
+598 root      20   0  6684 2432 1996 S    0  0.1   0:00.00 sshd                                                                                               
+  
+619 messageb  20   0  3260  880  660 S    0  0.0   0:00.02 dbus-daemon                                                                                        
+  
+634 syslog    20   0 31064 1364 1068 S    0  0.0   0:00.02 rsyslogd                                                                                           
+  
+743 root      20   0  2848  364  200 S    0  0.0   0:00.00 upstart-socket-                                                                                    
+  
+839 root       0 -20     0    0    0 S    0  0.0   0:00.00 kvm-irqfd-clean                                                                                    
+  
+843 root      20   0  4156  864  748 S    0  0.0   0:00.00 getty                                                                                              
+  
+852 root      20   0  4156  864  748 S    0  0.0   0:00.00 getty                                                                                              
+  
+856 root      20   0  4156  876  748 S    0  0.0   0:00.00 getty                                                                                              
+  
+860 root      20   0  4156  868  748 S    0  0.0   0:00.00 getty                                                                                              
+  
+867 root      20   0  4156  868  748 S    0  0.0   0:00.00 getty                                                                                              
+  
+876 whoopsie  20   0 24460 3524 2684 S    0  0.1   0:00.00 whoopsie                                                                                           
+  
+879 root      20   0  2176  616  516 S    0  0.0   0:00.00 acpid                                                                                              
+  
+885 root      20   0  3604  632  496 S    0  0.0   0:00.02 irqbalance                                                                                         
+  
+896 daemon    20   0  2472  352  224 S    0  0.0   0:00.00 atd                                                                                                
+  
+897 root      20   0  2620  784  636 S    0  0.0   0:00.00 cron                                                                                               
+  
+917 root      20   0  5104 1908 1400 S    0  0.0   0:00.04 login                                                                                              
+  
+973 root       0 -20     0    0    0 S    0  0.0   0:00.00 kdmflush                                                                                           
+  
+982 root       0 -20     0    0    0 S    0  0.0   0:00.00 kcryptd_io                                                                                         
+  
+983 root       0 -20     0    0    0 S    0  0.0   0:00.00 kcryptd                                                                                            
+ 
+1005 root      20   0     0    0    0 S    0  0.0   0:00.00 flush-8:0                                                                                          
+ 
+1006 root      20   0     0    0    0 S    0  0.0   0:00.00 flush-252:0                                                                                        
+ 
+1007 root      20   0     0    0    0 S    0  0.0   0:00.00 flush-252:2                                                                                        
+ 
+1123 ashley    20   0  9184 6084 1620 S    0  0.1   0:00.45 bash                                                                                               
+ 1229 root      20   0     0    0    0 S    0  0.0   0:00.00 kworker/0:0                                                                                        
+ 1230 ashley    20   0  2720 1072  860 R    0  0.0   0:00.00 top                                                                                                
+

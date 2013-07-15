@@ -1,0 +1,3 @@
+ateam:x:1000:1000:ateam,,,:/home/ateam:/bin/bash
+ashley:x:1002:1002:Ashley Campbell,,,:/home/ashley:/bin/bash
+tanner:x:1004:1004:Tanner Baldus,,,:/home/tanner:/bin/bash
