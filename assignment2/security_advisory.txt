@@ -1,0 +1,1339 @@
+(Security advisories listed at http://www.ubuntu.com/usn/precise/ )
+
+USN-1903-1: Apache HTTP Server vulnerabilities - 15th July 2013
+It was discovered that the mod_rewrite module incorrectly sanitized non- printable characters before writing data to log files. A remote attacker could possibly use this flaw to execute arbitrary commands by injecting escape sequences in the log file. (CVE-2013-1862) It was discovered that the mod_dav module incorrectly handled certain MERGE ...
+CVE-2013-1862 CVE-2013-1896
+
+USN-1904-1: libxml2 vulnerabilities - 15th July 2013
+It was discovered that libxml2 would load XML external entities by default. If a user or automated system were tricked into opening a specially crafted document, an attacker could possibly obtain access to arbitrary files or cause resource consumption. This issue only affected Ubuntu 10.04 LTS, Ubuntu 12.04 LTS, and ...
+CVE-2013-0339 CVE-2013-2877
+
+USN-1902-1: Ruby vulnerability - 9th July 2013
+William (B.J.) Snow Orvis discovered that Ruby incorrectly verified the hostname in SSL certificates. An attacker could trick Ruby into trusting a rogue server certificate, which was signed by a trusted certificate authority, to perform a man-in-the-middle attack.
+CVE-2013-4073
+
+USN-1901-1: Raptor vulnerability - 8th July 2013
+Timothy D. Morgan discovered that Raptor would unconditionally load XML external entities. If a user were tricked into opening a specially crafted document in an application linked against Raptor, an attacker could possibly obtain access to arbitrary files on the user's system or potentially execute arbitrary code with the privileges ...
+CVE-2012-0037
+
+USN-1898-1: OpenSSL vulnerability - 3rd July 2013
+The TLS protocol 1.2 and earlier can encrypt compressed data without properly obfuscating the length of the unencrypted data, which allows man-in-the-middle attackers to obtain plaintext content by observing length differences during a series of guesses in which a provided string potentially matches an unknown string in encrypted and compressed ...
+CVE-2012-4929
+
+USN-1897-1: PyMongo vulnerability - 3rd July 2013
+Jibbers McGee discovered that PyMongo incorrectly handled certain invalid DBRefs. An attacker could use this issue to cause PyMongo to crash, resulting in a denial of service.
+CVE-2013-2132
+
+USN-1890-2: Firefox regression - 3rd July 2013
+
+USN-1890-1 fixed vulnerabilities in Firefox. This update introduced a regression which sometimes resulted in Firefox using the wrong network proxy settings. This update fixes the problem. We apologize for the inconvenience. Original advisory details: Multiple memory safety issues were discovered in Firefox. If the user were tricked into opening a ...
+LP: 1194841
+
+USN-1896-1: Module::Signature perl module vulnerability - 3rd July 2013
+Florian Weimer discovered that the Module::Signature perl module incorrectly loaded unknown ciphers from relative directories. An attacker could possibly use this flaw to execute arbitrary code when a signature is verified.
+CVE-2013-2145
+
+USN-1894-1: curl vulnerability - 2nd July 2013
+Timo Sirainen discovered that libcurl incorrectly handled memory when parsing URL encoded strings. An attacker could possibly use this issue to cause libcurl to crash, leading to a denial of service, or execute arbitrary code.
+CVE-2013-2174
+
+USN-1893-1: Subversion vulnerabilities - 27th June 2013
+Alexander Klink discovered that the Subversion mod_dav_svn module for Apache did not properly handle a large number of properties. A remote authenticated attacker could use this flaw to cause memory consumption, leading to a denial of service. (CVE-2013-1845) Ben Reser discovered that the Subversion mod_dav_svn module for Apache did not ...
+CVE-2013-1845 CVE-2013-1846 CVE-2013-1847 CVE-2013-1849 CVE-2013-1884 CVE-2013-1968 CVE-2013-2112
+
+USN-1891-1: Thunderbird vulnerabilities - 26th June 2013
+Multiple memory safety issues were discovered in Thunderbird. If the user were tricked into opening a specially crafted message with scripting enabled, an attacker could possibly exploit these to cause a denial of service via application crash, or potentially execute arbitrary code with the privileges of the user invoking Thunderbird. ...
+CVE-2013-1682 CVE-2013-1684 CVE-2013-1685 CVE-2013-1686 CVE-2013-1687 CVE-2013-1690 CVE-2013-1692 CVE-2013-1693 CVE-2013-1694 CVE-2013-1697 LP: 1193919
+
+USN-1890-1: Firefox vulnerabilities - 26th June 2013
+Multiple memory safety issues were discovered in Firefox. If the user were tricked into opening a specially crafted page, an attacker could possibly exploit these to cause a denial of service via application crash, or potentially execute arbitrary code with the privileges of the user invoking Firefox. (CVE-2013-1682, CVE-2013-1683) Abhishek ...
+CVE-2013-1682 CVE-2013-1683 CVE-2013-1684 CVE-2013-1685 CVE-2013-1686 CVE-2013-1687 CVE-2013-1688 CVE-2013-1690 CVE-2013-1692 CVE-2013-1693 CVE-2013-1694 CVE-2013-1695 CVE-2013-1696 CVE-2013-1697 CVE-2013-1698 CVE-2013-1699 LP: 1192913
+
+USN-1889-1: HAProxy vulnerability - 20th June 2013
+David Torgerson discovered that HAProxy incorrectly parsed certain HTTP headers. A remote attacker could use this issue to cause HAProxy to stop responding, resulting in a denial of service.
+CVE-2013-2175
+
+USN-1888-1: Mesa vulnerabilities - 20th June 2013
+It was discovered that Mesa incorrectly handled certain memory calculations. An attacker could use this flaw to cause an application to crash, or possibly execute arbitrary code. (CVE-2013-1872) Ilja van Sprundel discovered that Mesa incorrectly handled certain memory calculations. An attacker could use this flaw to cause an application to ...
+CVE-2013-1872 CVE-2013-1993
+
+USN-1887-1: OpenStack Swift vulnerabilities - 19th June 2013
+Sebastian Krahmer discovered that Swift used the loads function in the pickle Python module when it was configured to use memcached. A remote attacker on the same network as memcached could exploit this to execute arbitrary code. This update adds a new memcache_serialization_support option to support secure json serialization. For ...
+CVE-2012-4406 CVE-2013-2161
+
+USN-1886-1: Puppet vulnerability - 18th June 2013
+It was discovered that Puppet incorrectly handled YAML payloads. An attacker on an untrusted client could use this issue to execute arbitrary code on the master.
+CVE-2013-3567
+
+USN-1885-1: libKDcraw vulnerability - 18th June 2013
+It was discovered that libKDcraw incorrectly handled broken full-color images. If a user or automated system were tricked into processing a specially crafted raw image, applications linked against libKDcraw could be made to crash, resulting in a denial of service, or possibly execute arbitrary code.
+CVE-2013-2126
+
+USN-1884-1: LibRaw vulnerability - 18th June 2013
+It was discovered that LibRaw incorrectly handled broken full-color images. If a user or automated system were tricked into processing a specially crafted raw image, applications linked against LibRaw could be made to crash, resulting in a denial of service, or possibly execute arbitrary code.
+CVE-2013-2126
+
+USN-1880-1: Linux kernel (Quantal HWE) vulnerabilities - 14th June 2013
+Andy Lutomirski discover an error in the Linux kernel's credential handling on unix sockets. A local user could exploit this flaw to gain administrative privileges. (CVE-2013-1979) An information leak was discovered in the Linux kernel when inotify is used to monitor the /dev/ptmx device. A local user could exploit this ...
+CVE-2013-0160 CVE-2013-1979 CVE-2013-2141 CVE-2013-2146 CVE-2013-3076 CVE-2013-3222 CVE-2013-3223 CVE-2013-3224 CVE-2013-3225 CVE-2013-3227 CVE-2013-3228 CVE-2013-3229 CVE-2013-3230 CVE-2013-3231 CVE-2013-3232 CVE-2013-3233 CVE-2013-3234 CVE-2013-3235
+
+USN-1879-1: Linux kernel (OMAP4) vulnerabilities - 14th June 2013
+Kees Cook discovered a flaw in the Linux kernel's iSCSI subsystem. A remote unauthenticated attacker could exploit this flaw to cause a denial of service (system crash) or potentially gain administrative privileges. (CVE-2013-2850) An information leak was discovered in the Linux kernel when inotify is used to monitor the /dev/ptmx ...
+CVE-2013-0160 CVE-2013-2146 CVE-2013-2850 CVE-2013-3076 CVE-2013-3222 CVE-2013-3223 CVE-2013-3224 CVE-2013-3225 CVE-2013-3227 CVE-2013-3228 CVE-2013-3229 CVE-2013-3231 CVE-2013-3232 CVE-2013-3234 CVE-2013-3235
+
+USN-1878-1: Linux kernel vulnerabilities - 14th June 2013
+An information leak was discovered in the Linux kernel when inotify is used to monitor the /dev/ptmx device. A local user could exploit this flaw to discover keystroke timing and potentially discover sensitive information like password length. (CVE-2013-0160) A flaw was discovered in the Linux kernel's perf events subsystem for ...
+CVE-2013-0160 CVE-2013-2146 CVE-2013-3076 CVE-2013-3222 CVE-2013-3223 CVE-2013-3224 CVE-2013-3225 CVE-2013-3227 CVE-2013-3228 CVE-2013-3229 CVE-2013-3231 CVE-2013-3232 CVE-2013-3234 CVE-2013-3235
+
+USN-1874-1: DBus vulnerability - 13th June 2013
+Alexandru Cornea discovered that DBus incorrectly handled certain messages. A local attacker could use this issue to cause system services to crash, resulting in a denial of service.
+CVE-2013-2168
+
+USN-1873-1: telepathy-gabble vulnerabilities - 12th June 2013
+Maksim Otstavnov discovered that telepathy-gabble incorrectly handled TLS when connecting to legacy jabber servers. If a remote attacker were able to perform a man-in-the-middle attack, this flaw could be exploited to view sensitive information. (CVE-2013-1431) It was discovered that telepathy-gabble incorrectly handled certain messages. A remote attacker could use this ...
+CVE-2013-1431 CVE-2013-1769
+
+USN-1871-1: xserver-xorg-video-openchrome vulnerability - 10th June 2013
+Ilja van Sprundel discovered multiple security issues in various X.org libraries and components. An attacker could use these issues to cause applications to crash, resulting in a denial of service, or possibly execute arbitrary code.
+CVE-2013-1994
+
+USN-1859-1: libxi vulnerabilities - 5th June 2013
+Ilja van Sprundel discovered multiple security issues in various X.org libraries and components. An attacker could use these issues to cause applications to crash, resulting in a denial of service, or possibly execute arbitrary code.
+CVE-2013-1984 CVE-2013-1995 CVE-2013-1998
+
+USN-1870-1: libxxf86vm vulnerability - 5th June 2013
+Ilja van Sprundel discovered multiple security issues in various X.org libraries and components. An attacker could use these issues to cause applications to crash, resulting in a denial of service, or possibly execute arbitrary code.
+CVE-2013-2001
+
+USN-1869-1: libxxf86dga vulnerabilities - 5th June 2013
+Ilja van Sprundel discovered multiple security issues in various X.org libraries and components. An attacker could use these issues to cause applications to crash, resulting in a denial of service, or possibly execute arbitrary code.
+CVE-2013-1991 CVE-2013-2000
+
+USN-1868-1: libxvmc vulnerabilities - 5th June 2013
+Ilja van Sprundel discovered multiple security issues in various X.org libraries and components. An attacker could use these issues to cause applications to crash, resulting in a denial of service, or possibly execute arbitrary code.
+CVE-2013-1990 CVE-2013-1999
+
+USN-1867-1: libxv vulnerabilities - 5th June 2013
+Ilja van Sprundel discovered multiple security issues in various X.org libraries and components. An attacker could use these issues to cause applications to crash, resulting in a denial of service, or possibly execute arbitrary code.
+CVE-2013-1989 CVE-2013-2066
+
+USN-1866-1: libxtst vulnerability - 5th June 2013
+Ilja van Sprundel discovered multiple security issues in various X.org libraries and components. An attacker could use these issues to cause applications to crash, resulting in a denial of service, or possibly execute arbitrary code.
+CVE-2013-2063
+
+USN-1865-1: libxt vulnerabilities - 5th June 2013
+Ilja van Sprundel discovered multiple security issues in various X.org libraries and components. An attacker could use these issues to cause applications to crash, resulting in a denial of service, or possibly execute arbitrary code.
+CVE-2013-2002 CVE-2013-2005
+
+USN-1864-1: libxres vulnerability - 5th June 2013
+Ilja van Sprundel discovered multiple security issues in various X.org libraries and components. An attacker could use these issues to cause applications to crash, resulting in a denial of service, or possibly execute arbitrary code.
+CVE-2013-1988
+
+USN-1863-1: libxrender vulnerability - 5th June 2013
+Ilja van Sprundel discovered multiple security issues in various X.org libraries and components. An attacker could use these issues to cause applications to crash, resulting in a denial of service, or possibly execute arbitrary code.
+CVE-2013-1987
+
+USN-1862-1: libxrandr vulnerability - 5th June 2013
+Ilja van Sprundel discovered multiple security issues in various X.org libraries and components. An attacker could use these issues to cause applications to crash, resulting in a denial of service, or possibly execute arbitrary code.
+CVE-2013-1986
+
+USN-1861-1: libxp vulnerability - 5th June 2013
+Ilja van Sprundel discovered multiple security issues in various X.org libraries and components. An attacker could use these issues to cause applications to crash, resulting in a denial of service, or possibly execute arbitrary code.
+CVE-2013-2062
+
+USN-1860-1: libxinerama vulnerability - 5th June 2013
+Ilja van Sprundel discovered multiple security issues in various X.org libraries and components. An attacker could use these issues to cause applications to crash, resulting in a denial of service, or possibly execute arbitrary code.
+CVE-2013-1985
+
+USN-1858-1: libxfixes vulnerability - 5th June 2013
+Ilja van Sprundel discovered multiple security issues in various X.org libraries and components. An attacker could use these issues to cause applications to crash, resulting in a denial of service, or possibly execute arbitrary code.
+CVE-2013-1983
+
+USN-1857-1: libxext vulnerability - 5th June 2013
+Ilja van Sprundel discovered multiple security issues in various X.org libraries and components. An attacker could use these issues to cause applications to crash, resulting in a denial of service, or possibly execute arbitrary code.
+CVE-2013-1982
+
+USN-1856-1: libxcursor vulnerability - 5th June 2013
+Ilja van Sprundel discovered multiple security issues in various X.org libraries and components. An attacker could use these issues to cause applications to crash, resulting in a denial of service, or possibly execute arbitrary code.
+CVE-2013-2003
+
+USN-1855-1: libxcb vulnerability - 5th June 2013
+Ilja van Sprundel discovered multiple security issues in various X.org libraries and components. An attacker could use these issues to cause applications to crash, resulting in a denial of service, or possibly execute arbitrary code.
+CVE-2013-2064
+
+USN-1854-1: libx11 vulnerabilities - 5th June 2013
+Ilja van Sprundel discovered multiple security issues in various X.org libraries and components. An attacker could use these issues to cause applications to crash, resulting in a denial of service, or possibly execute arbitrary code.
+CVE-2013-1981 CVE-2013-1997 CVE-2013-2004
+
+USN-1853-1: libfs vulnerability - 5th June 2013
+Ilja van Sprundel discovered multiple security issues in various X.org libraries and components. An attacker could use these issues to cause applications to crash, resulting in a denial of service, or possibly execute arbitrary code.
+CVE-2013-1996
+
+USN-1852-1: libdmx vulnerability - 5th June 2013
+Ilja van Sprundel discovered multiple security issues in various X.org libraries and components. An attacker could use these issues to cause applications to crash, resulting in a denial of service, or possibly execute arbitrary code.
+CVE-2013-1992
+
+USN-1849-1: Linux kernel (Raring HWE) vulnerability - 30th May 2013
+Kees Cook discovered a flaw in the Linux kernel's iSCSI subsystem. A remote unauthenticated attacker could exploit this flaw to cause a denial of service (system crash) or potentially gain administrative privileges. (CVE-2013-2850) An flaw was discovered in the Linux kernel's perf_events interface. A local user could exploit this flaw ...
+CVE-2013-2094 CVE-2013-2141 CVE-2013-2146 CVE-2013-2850 CVE-2013-3076 CVE-2013-3222 CVE-2013-3223 CVE-2013-3224 CVE-2013-3225 CVE-2013-3226 CVE-2013-3227 CVE-2013-3228 CVE-2013-3229 CVE-2013-3230 CVE-2013-3231 CVE-2013-3232 CVE-2013-3233 CVE-2013-3234 CVE-2013-3235
+
+USN-1845-1: Linux kernel (Quantal HWE) vulnerability - 30th May 2013
+Kees Cook discovered a flaw in the Linux kernel's iSCSI subsystem. A remote unauthenticated attacker could exploit this flaw to cause a denial of service (system crash) or potentially gain administrative privileges.
+CVE-2013-2850
+
+USN-1844-1: Linux kernel vulnerability - 30th May 2013
+Kees Cook discovered a flaw in the Linux kernel's iSCSI subsystem. A remote unauthenticated attacker could exploit this flaw to cause a denial of service (system crash) or potentially gain administrative privileges.
+CVE-2013-2850
+
+USN-1843-1: GnuTLS vulnerability - 29th May 2013
+It was discovered that GnuTLS incorrectly handled certain padding bytes. A remote attacker could use this flaw to cause an application using GnuTLS to crash, leading to a denial of service.
+CVE-2013-2116
+
+USN-1842-1: KDE-Libs vulnerability - 29th May 2013
+It was discovered that KIO would sometimes display web authentication credentials under certain error conditions. If a user were tricked into opening a specially crafted web page, an attacker could potentially exploit this to expose confidential information.
+CVE-2013-2074
+
+USN-1841-1: Tomcat vulnerabilities - 28th May 2013
+It was discovered that Tomcat incorrectly handled certain requests submitted using chunked transfer encoding. A remote attacker could use this flaw to cause the Tomcat server to stop responding, resulting in a denial of service. This issue only affected Ubuntu 10.04 LTS and Ubuntu 12.04 LTS. (CVE-2012-3544) It was discovered ...
+CVE-2012-3544 CVE-2013-2067 CVE-2013-2071
+
+USN-1839-1: Linux kernel (OMAP4) vulnerabilities - 28th May 2013
+An flaw was discovered in the Linux kernel's perf_events interface. A local user could exploit this flaw to escalate privileges on the system. (CVE-2013-2094) Andy Lutomirski discover an error in the Linux kernel's credential handling on unix sockets. A local user could exploit this flaw to gain administrative privileges. (CVE-2013-1979) ...
+CVE-2013-1929 CVE-2013-1979 CVE-2013-2094 CVE-2013-2141 CVE-2013-3301
+
+USN-1834-1: Linux kernel (Quantal HWE) vulnerabilities - 24th May 2013
+A buffer overflow vulnerability was discovered in the Broadcom tg3 ethernet driver for the Linux kernel. A local user could exploit this flaw to cause a denial of service (crash the system) or potentially escalate privileges on the system. (CVE-2013-1929) A flaw was discovered in the Linux kernel's ftrace subsystem ...
+CVE-2013-1929 CVE-2013-3301
+
+USN-1833-1: Linux kernel vulnerabilities - 24th May 2013
+Andy Lutomirski discover an error in the Linux kernel's credential handling on unix sockets. A local user could exploit this flaw to gain administrative privileges. (CVE-2013-1979) A buffer overflow vulnerability was discovered in the Broadcom tg3 ethernet driver for the Linux kernel. A local user could exploit this flaw to ...
+CVE-2013-1929 CVE-2013-1979 CVE-2013-2141 CVE-2013-3301
+
+USN-1832-1: LibTIFF vulnerabilities - 21st May 2013
+Emmanuel Bouillon discovered that LibTIFF incorrectly handled certain malformed images when using the tiff2pdf tool. If a user or automated system were tricked into opening a specially crafted TIFF image, a remote attacker could crash the application, leading to a denial of service, or possibly execute arbitrary code with user ...
+CVE-2013-1960 CVE-2013-1961
+
+USN-1831-1: OpenStack Nova vulnerability - 16th May 2013
+Loganathan Parthipan discovered that Nova did not verify the size of QCOW2 instance storage. An authenticated attacker could exploit this to cause a denial of service by creating an image with a large virtual size with little data, then filling the virtual disk.
+CVE-2013-2096
+
+USN-1830-1: OpenStack Keystone vulnerability - 16th May 2013
+Sam Stoelinga discovered that Keystone would not immediately invalidate tokens when deleting users via the v2 API. A deleted user would be able to continue to use resources until the token lifetime expired.
+CVE-2013-2059
+
+USN-1828-1: Linux kernel (Quantal HWE) vulnerability - 15th May 2013
+An flaw was discovered in the Linux kernel's perf_events interface. A local user could exploit this flaw to escalate privileges on the system.
+CVE-2013-2094
+
+USN-1825-1: Linux kernel vulnerability - 15th May 2013
+An flaw was discovered in the Linux kernel's perf_events interface. A local user could exploit this flaw to escalate privileges on the system.
+CVE-2013-2094
+
+USN-1823-1: Thunderbird vulnerabilities - 14th May 2013
+Multiple memory safety issues were discovered in Thunderbird. If the user were tricked into opening a specially crafted message with scripting enabled, an attacker could possibly exploit these to cause a denial of service via application crash, or potentially execute code with the privileges of the user invoking Thunderbird. (CVE-2013-0801, ...
+CVE-2013-0801 CVE-2013-1669 CVE-2013-1670 CVE-2013-1674 CVE-2013-1675 CVE-2013-1676 CVE-2013-1677 CVE-2013-1678 CVE-2013-1679 CVE-2013-1680 CVE-2013-1681 LP: 1178649
+
+USN-1822-1: Firefox vulnerabilities - 14th May 2013
+Multiple memory safety issues were discovered in Firefox. If the user were tricked into opening a specially crafted page, an attacker could possibly exploit these to cause a denial of service via application crash, or potentially execute code with the privileges of the user invoking Firefox. (CVE-2013-0801, CVE-2013-1669) Cody Crews ...
+CVE-2013-0801 CVE-2013-1669 CVE-2013-1670 CVE-2013-1671 CVE-2013-1674 CVE-2013-1675 CVE-2013-1676 CVE-2013-1677 CVE-2013-1678 CVE-2013-1679 CVE-2013-1680 CVE-2013-1681 LP: 1178277
+
+USN-1821-1: telepathy-idle vulnerability - 9th May 2013
+It was discovered that telepathy-idle did not perform any server certificate validation when using SSL connections. If a remote attacker were able to perform a man-in-the-middle attack, this flaw could be exploited to alter or compromise confidential information.
+CVE-2007-6746
+
+USN-1820-1: gpsd vulnerability - 8th May 2013
+It was discovered that gpsd incorrectly handled certain malformed GPS data. An attacker could use this issue to cause gpsd to crash, resulting in a denial of service, or possibly execute arbitrary code.
+CVE-2013-2038
+
+USN-1819-1: OpenJDK 6 vulnerabilities - 7th May 2013
+Ben Murphy discovered a vulnerability in the OpenJDK JRE related to information disclosure and data integrity. An attacker could exploit this to execute arbitrary code. (CVE-2013-0401) James Forshaw discovered a vulnerability in the OpenJDK JRE related to information disclosure, data integrity and availability. An attacker could exploit this to execute ...
+CVE-2013-0401 CVE-2013-1488 CVE-2013-1518 CVE-2013-1537 CVE-2013-1557 CVE-2013-1558 CVE-2013-1569 CVE-2013-2383 CVE-2013-2384 CVE-2013-2415 CVE-2013-2417 CVE-2013-2419 CVE-2013-2420 CVE-2013-2421 CVE-2013-2422 CVE-2013-2424 CVE-2013-2426 CVE-2013-2429 CVE-2013-2430 CVE-2013-2431
+
+USN-1818-1: Mesa vulnerability - 7th May 2013
+It was discovered that Mesa incorrectly handled certain arrays. An attacker could use this issue to cause Mesa to crash, resulting in a denial of service, or possibly execute arbitrary code.
+CVE-2012-5129
+
+USN-1816-1: ClamAV vulnerabilities - 3rd May 2013
+It was discovered that ClamAV would incorrectly parse a UPX-packed executable, leading to possible inappropriate heap reads. An attacker could use this issue to cause ClamAV to crash, resulting in a denial of service, or possibly execute arbitrary code. (CVE-2013-2020) It was discovered that ClamAV would incorrectly parse a PDF ...
+CVE-2013-2020 CVE-2013-2021
+
+USN-1812-1: Linux kernel (Quantal HWE) vulnerabilities - 1st May 2013
+Mathias Krause discovered an information leak in the Linux kernel's UDF file system implementation. A local user could exploit this flaw to examine some of the kernel's heap memory. (CVE-2012-6548) Mathias Krause discovered an information leak in the Linux kernel's ISO 9660 CDROM file system driver. A local user could ...
+CVE-2012-6548 CVE-2012-6549 CVE-2013-0913 CVE-2013-1796 CVE-2013-1797 CVE-2013-1798 CVE-2013-1848 CVE-2013-1860 CVE-2013-2206 CVE-2013-2634 CVE-2013-2635
+
+USN-1811-1: Linux kernel (OMAP4) vulnerabilities - 1st May 2013
+Mathias Krause discovered an information leak in the Linux kernel's UDF file system implementation. A local user could exploit this flaw to examine some of the kernel's heap memory. (CVE-2012-6548) Mathias Krause discovered an information leak in the Linux kernel's ISO 9660 CDROM file system driver. A local user could ...
+CVE-2012-6548 CVE-2012-6549 CVE-2013-0913 CVE-2013-1848 CVE-2013-1860 CVE-2013-2206 CVE-2013-2634 CVE-2013-2635
+
+USN-1809-1: Linux kernel vulnerabilities - 1st May 2013
+Mathias Krause discovered an information leak in the Linux kernel's UDF file system implementation. A local user could exploit this flaw to examine some of the kernel's heap memory. (CVE-2012-6548) Mathias Krause discovered an information leak in the Linux kernel's ISO 9660 CDROM file system driver. A local user could ...
+CVE-2012-6548 CVE-2012-6549 CVE-2013-0913 CVE-2013-1796 CVE-2013-1797 CVE-2013-1798 CVE-2013-1848 CVE-2013-1860 CVE-2013-2206 CVE-2013-2634 CVE-2013-2635
+
+USN-1807-1: MySQL vulnerabilities - 24th April 2013
+Multiple security issues were discovered in MySQL and this update includes new upstream MySQL versions to fix these issues. MySQL has been updated to 5.1.69 in Ubuntu 10.04 LTS and Ubuntu 11.10. Ubuntu 12.04 LTS and Ubuntu 12.10 have been updated to MySQL 5.5.31. In addition to security fixes, the ...
+CVE-2012-0553 CVE-2013-1492 CVE-2013-1502 CVE-2013-1506 CVE-2013-1511 CVE-2013-1512 CVE-2013-1521 CVE-2013-1523 CVE-2013-1526 CVE-2013-1532 CVE-2013-1544 CVE-2013-1552 CVE-2013-1555 CVE-2013-1623 CVE-2013-2375 CVE-2013-2376 CVE-2013-2378 CVE-2013-2389 CVE-2013-2391 CVE-2013-2392
+
+USN-1804-2: IcedTea-Web regression - 23rd April 2013
+
+USN-1804-1 fixed vulnerabilities in IcedTea-Web. This update introduced a regression with the Java Network Launching Protocol (JNLP) when fetching content over SSL under certain configurations, such as when using the community-supported IcedTead 7 browser plugin. This update fixes the problem. We apologize for the inconvenience. Original advisory details: Jiri Vanek ...
+LP: 1171506
+
+USN-1804-1: IcedTea-Web vulnerabilities - 18th April 2013
+Jiri Vanek discovered that IcedTea-Web would use the same classloader for applets from different domains. A remote attacker could exploit this to expose sensitive information or potentially manipulate applets from other domains. (CVE-2013-1926) It was discovered that IcedTea-Web did not properly verify JAR files and was susceptible to the GIFAR ...
+CVE-2013-1926 CVE-2013-1927
+
+USN-1803-1: X.Org X server vulnerability - 17th April 2013
+It was discovered that the X.Org X server did not properly clear input events in certain circumstances. A local attacker with physical access could use this flaw to capture keystrokes.
+CVE-2013-1940
+
+USN-1802-1: Samba vulnerability - 16th April 2013
+It was discovered that Samba incorrectly handled CIFS share attributes when SMB2 was used. A remote authenticated user could possibly gain write access to certain shares, bypassing the intended permissions.
+CVE-2013-0454
+
+USN-1801-1: curl vulnerability - 15th April 2013
+YAMADA Yasuharu discovered that libcurl was vulnerable to a cookie leak when doing requests across domains with matching tails. curl did not properly restrict cookies to domains and subdomains. If a user or automated system were tricked into processing a specially crafted URL, an attacker could read cookie values stored ...
+CVE-2013-1944
+
+USN-1800-1: HAProxy vulnerabilities - 15th April 2013
+It was discovered that HAProxy incorrectly handled configurations where global.tune.bufsize was set to a value higher than the default. A remote attacker could use this issue to cause a denial of service, or possibly execute arbitrary code. (CVE-2012-2942) Yves Lafon discovered that HAProxy incorrectly handled HTTP keywords in TCP inspection ...
+CVE-2012-2942 CVE-2013-1912
+
+USN-1799-1: NVIDIA graphics drivers vulnerability - 10th April 2013
+It was discovered that the NVIDIA graphics drivers incorrectly handled large ARGB cursors. A local attacker could use this issue to gain root privileges. The NVIDIA graphics drivers have been updated to 304.88 to fix this issue. In addition to the security fix, the updated packages contain bug fixes, new ...
+CVE-2013-0131
+
+USN-1795-1: Linux kernel (Quantal HWE) vulnerabilities - 8th April 2013
+Andrew Jones discovered a flaw with the xen_iret function in Linux kernel's Xen virtualizeation. In the 32-bit Xen paravirt platform an unprivileged guest OS user could exploit this flaw to cause a denial of service (crash the system) or gain guest OS privilege. (CVE-2013-0228) Emese Revfy discovered that in the ...
+CVE-2013-0228 CVE-2013-0914 CVE-2013-1767 CVE-2013-1792 CVE-2013-2546 CVE-2013-2547 CVE-2013-2548
+
+USN-1794-1: Linux kernel (OMAP4) vulnerabilities - 8th April 2013
+Emese Revfy discovered that in the Linux kernel signal handlers could leak address information across an exec, making it possible to by pass ASLR (Address Space Layout Randomization). A local user could use this flaw to by pass ASLR to reliably deliver an exploit payload that would otherwise be stopped ...
+CVE-2013-0914 CVE-2013-1767 CVE-2013-1792 CVE-2013-2546 CVE-2013-2547 CVE-2013-2548
+
+USN-1793-1: Linux kernel vulnerabilities - 8th April 2013
+Emese Revfy discovered that in the Linux kernel signal handlers could leak address information across an exec, making it possible to by pass ASLR (Address Space Layout Randomization). A local user could use this flaw to by pass ASLR to reliably deliver an exploit payload that would otherwise be stopped ...
+CVE-2013-0914 CVE-2013-1767 CVE-2013-1792 CVE-2013-2546 CVE-2013-2547 CVE-2013-2548
+
+USN-1791-1: Thunderbird vulnerabilities - 8th April 2013
+Olli Pettay, Jesse Ruderman, Boris Zbarsky, Christian Holler, Milan Sreckovic and Joe Drew discovered multiple memory safety issues affecting Thunderbird. If the user were tricked into opening a specially crafted message with scripting enabled, an attacker could possibly exploit these to cause a denial of service via application crash, or ...
+CVE-2013-0788 CVE-2013-0791 CVE-2013-0793 CVE-2013-0795 CVE-2013-0796 CVE-2013-0800 LP: 1162043
+
+USN-1790-1: Libav vulnerabilities - 4th April 2013
+It was discovered that Libav incorrectly handled certain malformed media files. If a user were tricked into opening a crafted media file, an attacker could cause a denial of service via application crash, or possibly execute arbitrary code with the privileges of the user invoking the program.
+CVE-2013-0894 CVE-2013-2277 CVE-2013-2495 CVE-2013-2496
+
+USN-1786-1: Firefox vulnerabilities - 4th April 2013
+Olli Pettay, Jesse Ruderman, Boris Zbarsky, Christian Holler, Milan Sreckovic, Joe Drew, Andrew McCreight, Randell Jesup, Gary Kwong and Mats Palmgren discovered multiple memory safety issues affecting Firefox. If the user were tricked into opening a specially crafted page, an attacker could possibly exploit these to cause a denial of ...
+CVE-2013-0788 CVE-2013-0789 CVE-2013-0791 CVE-2013-0792 CVE-2013-0793 CVE-2013-0794 CVE-2013-0795 CVE-2013-0796 CVE-2013-0800 LP: 1161422
+
+USN-1789-1: PostgreSQL vulnerabilities - 4th April 2013
+Mitsumasa Kondo and Kyotaro Horiguchi discovered that PostgreSQL incorrectly handled certain connection requests containing database names starting with a dash. A remote attacker could use this flaw to damage or destroy files within a server's data directory. This issue only applied to Ubuntu 11.10, Ubuntu 12.04 LTS, and Ubuntu 12.10. ...
+CVE-2013-1899 CVE-2013-1900 CVE-2013-1901
+
+USN-1785-1: poppler vulnerabilities - 2nd April 2013
+It was discovered that poppler contained multiple security issues when parsing malformed PDF documents. If a user or automated system were tricked into opening a crafted PDF file, an attacker could cause a denial of service or possibly execute arbitrary code with privileges of the user invoking the program.
+CVE-2013-1788 CVE-2013-1789 CVE-2013-1790
+
+USN-1784-1: libxslt vulnerability - 2nd April 2013
+Nicholas Gregoire discovered that libxslt incorrectly handled certain empty values. If a user or automated system were tricked into processing a specially crafted XSLT document, a remote attacker could cause libxslt to crash, causing a denial of service.
+CVE-2012-6139
+
+USN-1783-1: Bind vulnerability - 29th March 2013
+Matthew Horsfall discovered that Bind incorrectly handled regular expression checking. A remote attacker could use this flaw to cause Bind to consume an excessive amount of memory, possibly resulting in a denial of service. This issue was corrected by disabling RDATA regular expression syntax checking.
+CVE-2013-2266
+
+USN-1782-1: libxml2 vulnerability - 28th March 2013
+It was discovered that libxml2 incorrectly handled XML entity expansion. An attacker could use this flaw to cause libxml2 to consume large amounts of resources, resulting in a denial of service.
+CVE-2013-0338
+
+USN-1781-1: Linux kernel (OMAP4) vulnerabilities - 26th March 2013
+Andrew Jones discovered a flaw with the xen_iret function in Linux kernel's Xen virtualizeation. In the 32-bit Xen paravirt platform an unprivileged guest OS user could exploit this flaw to cause a denial of service (crash the system) or gain guest OS privilege. (CVE-2013-0228) A flaw was reported in the ...
+CVE-2013-0228 CVE-2013-0268 CVE-2013-0311 CVE-2013-0313 CVE-2013-0349 CVE-2013-1772 CVE-2013-1774
+
+USN-1780-1: Ruby vulnerability - 25th March 2013
+Ben Murphy discovered that the Ruby REXML library incorrectly handled XML entity expansion. An attacker could use this flaw to cause Ruby to consume large amounts of memory, resulting in a denial of service.
+CVE-2013-1821
+
+USN-1779-1: GNOME Online Accounts vulnerability - 25th March 2013
+It was discovered that GNOME Online Accounts did not properly check SSL certificates when configuring online accounts. If a remote attacker were able to perform a man-in-the-middle attack, this flaw could be exploited to alter or compromise credentials and confidential information.
+CVE-2013-0240 CVE-2013-1799
+
+USN-1732-3: OpenSSL vulnerability - 25th March 2013
+
+USN-1732-1 fixed vulnerabilities in OpenSSL. The fix for CVE-2013-0169 and CVE-2012-2686 was reverted in USN-1732-2 because of a regression. This update restores the security fix, and includes an extra fix from upstream to address the AES-NI regression. We apologize for the inconvenience. Original advisory details: Adam Langley and Wolfgang Ettlingers ...
+CVE-2013-0169
+
+USN-1773-1: ClamAV vulnerabilities - 21st March 2013
+Felix Groebert, Mateusz Jurczyk and Gynvael Coldwind discovered multiple security issues with ClamAV. An attacker could use these issues to cause ClamAV to crash, resulting in a denial of service, or possibly execute arbitrary code.
+LP: 1157385
+
+USN-1771-1: OpenStack Nova vulnerabilities - 20th March 2013
+Loganathan Parthipan discovered that Nova did not properly validate VNC tokens after an instance was deleted. An authenticated attacker could exploit this to access other virtual machines under certain circumstances. This issue did not affect Ubuntu 11.10. (CVE-2013-0335) Vish Ishaya discovered that Nova did not always enforce quotas on fixed ...
+CVE-2013-0335 CVE-2013-1838
+
+USN-1770-1: Perl vulnerability - 19th March 2013
+Yves Orton discovered that Perl incorrectly handled hashing when using user-provided hash keys. An attacker could use this flaw to perform a denial of service attack against software written in Perl.
+CVE-2013-1667
+
+USN-1768-1: Linux kernel (Quantal HWE) vulnerabilities - 18th March 2013
+Andrew Cooper of Citrix reported a Xen stack corruption in the Linux kernel. An unprivileged user in a 32bit PVOPS guest can cause the guest kernel to crash, or operate erroneously. (CVE-2013-0190) A failure to validate input was discovered in the Linux kernel's Xen netback (network backend) driver. A user ...
+CVE-2013-0190 CVE-2013-0216 CVE-2013-0217 CVE-2013-0231 CVE-2013-0268 CVE-2013-0290 CVE-2013-0311 CVE-2013-0313 CVE-2013-0349
+
+USN-1767-1: Linux kernel vulnerabilities - 18th March 2013
+Andrew Cooper of Citrix reported a Xen stack corruption in the Linux kernel. An unprivileged user in a 32bit PVOPS guest can cause the guest kernel to crash, or operate erroneously. (CVE-2013-0190) A failure to validate input was discovered in the Linux kernel's Xen netback (network backend) driver. A user ...
+CVE-2013-0190 CVE-2013-0216 CVE-2013-0217 CVE-2013-0228 CVE-2013-0231 CVE-2013-0268 CVE-2013-0311 CVE-2013-0313 CVE-2013-0349 CVE-2013-1772 CVE-2013-1774
+
+USN-1765-1: Apache HTTP Server vulnerabilities - 18th March 2013
+Niels Heinen discovered that multiple modules incorrectly sanitized certain strings, which could result in browsers becoming vulnerable to cross-site scripting attacks when processing the output. With cross-site scripting vulnerabilities, if a user were tricked into viewing server output during a crafted server request, a remote attacker could exploit this to ...
+CVE-2012-3499 CVE-2012-4557 CVE-2012-4558 CVE-2013-1048
+
+USN-1764-1: OpenStack Glance vulnerability - 14th March 2013
+Stuart McLaren discovered an issue with Glance v1 API requests. An authenticated attacker could exploit this to expose the Glance operator's Swift and/or S3 credentials via the response headers when requesting a cached image.
+CVE-2013-1840
+
+USN-1763-2: NSPR update - 14th March 2013
+
+USN-1763-1 fixed a vulnerability in NSS. This update provides the NSPR needed to use the new NSS. Original advisory details: Nadhem Alfardan and Kenny Paterson discovered that the TLS protocol as used in NSS was vulnerable to a timing side-channel attack known as the "Lucky Thirteen" issue. A remote attacker ...
+LP: 1155295
+
+USN-1763-1: NSS vulnerability - 14th March 2013
+Nadhem Alfardan and Kenny Paterson discovered that the TLS protocol as used in NSS was vulnerable to a timing side-channel attack known as the "Lucky Thirteen" issue. A remote attacker could use this issue to perform plaintext-recovery attacks via analysis of timing data.
+CVE-2013-1620
+
+USN-1762-1: APT vulnerability - 14th March 2013
+Ansgar Burchardt discovered that APT incorrectly handled InRelease files. If a remote attacker were able to perform a man-in-the-middle attack, this flaw could potentially be used to install altered packages. This update corrects the issue by disabling InRelease file support completely. Please note that this update breaks third-party repositories that ...
+CVE-2013-1051
+
+USN-1761-1: PHP vulnerability - 13th March 2013
+It was discovered that PHP incorrectly handled XML external entities in SOAP WSDL files. A remote attacker could use this flaw to read arbitrary files off the server.
+CVE-2013-1643
+
+USN-1758-2: Thunderbird vulnerability - 12th March 2013
+
+USN-1758-1 fixed vulnerabilities in Firefox. This update provides the corresponding update for Thunderbird. Original advisory details: It was discovered that Firefox contained a memory safety issue. If a user were tricked into opening a specially crafted page with the HTML editor, a remote attacker could exploit this to execute arbitrary ...
+CVE-2013-0787
+
+USN-1759-1: Puppet vulnerabilities - 12th March 2013
+It was discovered that Puppet agents incorrectly handled certain kick connections in a non-default configuration. An attacker on an authenticated client could use this issue to possibly execute arbitrary code. (CVE-2013-1653) It was discovered that Puppet incorrectly handled certain catalog requests. An attacker on an authenticated client could use this ...
+CVE-2013-1640 CVE-2013-1652 CVE-2013-1653 CVE-2013-1654 CVE-2013-1655 CVE-2013-2275
+
+USN-1758-1: Firefox vulnerability - 8th March 2013
+It was discovered that Firefox contained a memory safety issue. If a user were tricked into opening a specially crafted page with the HTML editor, a remote attacker could exploit this to execute arbitrary code with the privileges of the user invoking the program.
+CVE-2013-0787 LP: 1152052
+
+USN-1757-1: Django vulnerabilities - 7th March 2013
+James Kettle discovered that Django did not properly filter the Host HTTP header when processing certain requests. An attacker could exploit this to generate and display arbitrary URLs to users. Although this issue had been previously addressed in USN-1632-1, this update adds additional hardening measures to host header validation. This ...
+CVE-2012-4520 CVE-2013-0305 CVE-2013-0306 CVE-2013-1664 CVE-2013-1665
+
+USN-1755-1: OpenJDK 6 vulnerabilities - 5th March 2013
+It was discovered that OpenJDK did not properly validate certain types of images. A remote attacker could exploit this to cause OpenJDK to crash. (CVE-2013-0809) It was discovered that OpenJDK did not properly check return values when performing color conversion for images. If a user were tricked into opening a ...
+CVE-2013-0809 CVE-2013-1493
+
+USN-1729-2: Firefox regression - 28th February 2013
+
+USN-1729-1 fixed vulnerabilities in Firefox. This update introduced a regression which sometimes resulted in freezes and crashes when using multiple tabs with images displayed. This update fixes the problem. We apologize for the inconvenience. Original advisory details: Olli Pettay, Christoph Diehl, Gary Kwong, Jesse Ruderman, Andrew McCreight, Joe Drew, Wayne ...
+LP: 1134409
+
+USN-1732-2: OpenSSL regression - 28th February 2013
+
+USN-1732-1 fixed vulnerabilities in OpenSSL. The fix for CVE-2013-0169 and CVE-2012-2686 introduced a regression causing decryption failures on hardware supporting AES-NI. This update temporarily reverts the security fix pending further investigation. We apologize for the inconvenience. Original advisory details: Adam Langley and Wolfgang Ettlingers discovered that OpenSSL incorrectly handled certain ...
+LP: 1133333
+
+USN-1754-1: Sudo vulnerability - 28th February 2013
+Marco Schoepl discovered that Sudo incorrectly handled time stamp files when the system clock is set to epoch. A local attacker could use this issue to run Sudo commands without a password prompt.
+CVE-2013-1775
+
+USN-1753-1: DBus-GLib vulnerability - 27th February 2013
+Sebastian Krahmer and Bastien Nocera discovered that DBus-GLib did not properly validate the message sender when the "NameOwnerChanged" signal was received. A local attacker could possibly use this issue to escalate their privileges.
+CVE-2013-0292
+
+USN-1752-1: GnuTLS vulnerability - 27th February 2013
+Nadhem Alfardan and Kenny Paterson discovered that the TLS protocol as used in GnuTLS was vulnerable to a timing side-channel attack known as the "Lucky Thirteen" issue. A remote attacker could use this issue to perform plaintext-recovery attacks via analysis of timing data.
+CVE-2013-1619
+
+USN-1749-1: Linux kernel (Quantal HWE) vulnerability - 26th February 2013
+Mathias Krause discovered a bounds checking error for netlink messages requesting SOCK_DIAG_BY_FAMILY. An unprivileged local user could exploit this flaw to crash the system or run programs as an administrator.
+CVE-2013-1763
+
+USN-1748-1: Thunderbird vulnerabilities - 25th February 2013
+Bobby Holley discovered vulnerabilities in Chrome Object Wrappers (COW) and System Only Wrappers (SOW). If a user were tricked into opening a specially crafted page and had scripting enabled, a remote attacker could exploit this to bypass security protections to obtain sensitive information or potentially execute code with the privileges ...
+CVE-2013-0773 CVE-2013-0774 CVE-2013-0775 CVE-2013-0776 CVE-2013-0777 CVE-2013-0778 CVE-2013-0779 CVE-2013-0780 CVE-2013-0781 CVE-2013-0782 CVE-2013-0783 CVE-2013-0784 LP: 1131110
+
+USN-1747-1: Transmission vulnerability - 25th February 2013
+It was discovered that Transmission incorrectly handled certain micro transport protocol packets. A remote attacker could use this issue to cause a denial of service, or possibly execute arbitrary code.
+CVE-2012-6129
+
+USN-1746-1: Pidgin vulnerabilities - 25th February 2013
+Chris Wysopal discovered that Pidgin incorrectly handled file transfers in the MXit protocol handler. A remote attacker could use this issue to create or overwrite arbitrary files. This issue only affected Ubuntu 11.10, Ubuntu 12.04 LTS and Ubuntu 12.10. (CVE-2013-0271) It was discovered that Pidgin incorrectly handled long HTTP headers ...
+CVE-2013-0271 CVE-2013-0272 CVE-2013-0273 CVE-2013-0274
+
+USN-1743-1: Linux kernel (Quantal HWE) vulnerability - 21st February 2013
+Suleiman Souhlal, Salman Qazi, Aaron Durbin and Michael Davidson discovered a race condition in the Linux kernel's ptrace syscall. An unprivileged local attacker could exploit this flaw to run programs as an administrator. (CVE-2013-0871) A flaw was discovered in the Edgeort USB serial converter driver when the device is disconnected ...
+CVE-2013-0871 CVE-2013-1774 CVE-2013-2058
+
+USN-1742-1: Linux kernel (OMAP4) vulnerability - 21st February 2013
+Suleiman Souhlal, Salman Qazi, Aaron Durbin and Michael Davidson discovered a race condition in the Linux kernel's ptrace syscall. An unprivileged local attacker could exploit this flaw to run programs as an administrator.
+CVE-2013-0871
+
+USN-1741-1: Linux kernel vulnerability - 21st February 2013
+Suleiman Souhlal, Salman Qazi, Aaron Durbin and Michael Davidson discovered a race condition in the Linux kernel's ptrace syscall. An unprivileged local attacker could exploit this flaw to run programs as an administrator.
+CVE-2013-0871
+
+USN-1735-1: OpenJDK vulnerabilities - 21st February 2013
+Nadhem Alfardan and Kenny Paterson discovered that the TLS protocol as used in OpenJDK was vulnerable to a timing side-channel attack known as the "Lucky Thirteen" issue. A remote attacker could use this issue to perform plaintext-recovery attacks via analysis of timing data. (CVE-2013-0169) A vulnerability was discovered in the ...
+CVE-2013-0169 CVE-2013-1484 CVE-2013-1485 CVE-2013-1486 CVE-2013-1487
+
+USN-1734-1: OpenStack Nova vulnerability - 21st February 2013
+Joshua Harlow discovered that Nova would allow XML entity processing. A remote unauthenticated attacker could exploit this using the Nova API to cause a denial of service via resource exhaustion. (CVE-2013-1664)
+CVE-2013-1664
+
+USN-1733-1: Ruby vulnerabilities - 21st February 2013
+Jean-Philippe Aumasson discovered that Ruby incorrectly generated predictable hash values. An attacker could use this issue to generate hash collisions and cause a denial of service. (CVE-2012-5371) Evgeny Ermakov discovered that documentation generated by rdoc is vulnerable to a cross-site scripting issue. With cross-site scripting vulnerabilities, if a user were ...
+CVE-2012-5371 CVE-2013-0256 CVE-2013-0269
+
+USN-1732-1: OpenSSL vulnerabilities - 21st February 2013
+Adam Langley and Wolfgang Ettlingers discovered that OpenSSL incorrectly handled certain crafted CBC data when used with AES-NI. A remote attacker could use this issue to cause OpenSSL to crash, resulting in a denial of service. This issue only affected Ubuntu 12.04 LTS and Ubuntu 12.10. (CVE-2012-2686) Stephen Henson discovered ...
+CVE-2012-2686 CVE-2013-0166 CVE-2013-0169
+
+USN-1730-1: OpenStack Keystone vulnerabilities - 20th February 2013
+Nathanael Burton discovered that Keystone did not properly verify disabled users. An authenticated but disabled user would continue to have access rights that were removed. (CVE-2013-0282) Jonathan Murray discovered that Keystone would allow XML entity processing. A remote unauthenticated attacker could exploit this to cause a denial of service via ...
+CVE-2013-0282 CVE-2013-1664 CVE-2013-1665
+
+USN-1729-1: Firefox vulnerabilities - 19th February 2013
+Olli Pettay, Christoph Diehl, Gary Kwong, Jesse Ruderman, Andrew McCreight, Joe Drew, Wayne Mery, Alon Zakai, Christian Holler, Gary Kwong, Luke Wagner, Terrence Cole, Timothy Nikkel, Bill McCloskey, and Nicolas Pierron discovered multiple memory safety issues affecting Firefox. If the user were tricked into opening a specially crafted page, an ...
+CVE-2013-0765 CVE-2013-0772 CVE-2013-0773 CVE-2013-0774 CVE-2013-0775 CVE-2013-0776 CVE-2013-0777 CVE-2013-0778 CVE-2013-0779 CVE-2013-0780 CVE-2013-0781 CVE-2013-0782 CVE-2013-0783 CVE-2013-0784 LP: 1128883
+
+USN-1724-1: OpenJDK vulnerabilities - 14th February 2013
+Several vulnerabilities were discovered in the OpenJDK JRE related to information disclosure and data integrity. An attacker could exploit these to cause a denial of service. (CVE-2012-1541, CVE-2012-3342, CVE-2013-0351, CVE-2013-0419, CVE-2013-0423, CVE-2013-0446, CVE-2012-3213, CVE-2013-0425, CVE-2013-0426, CVE-2013-0428, CVE-2013-0429, CVE-2013-0430, CVE-2013-0441, CVE-2013-0442, CVE-2013-0445, CVE-2013-0450, CVE-2013-1475, CVE-2013-1476, CVE-2013-1478, CVE-2013-1480) Vulnerabilities were discovered in ...
+CVE-2012-1541 CVE-2012-3213 CVE-2012-3342 CVE-2013-0351 CVE-2013-0409 CVE-2013-0419 CVE-2013-0423 CVE-2013-0424 CVE-2013-0425 CVE-2013-0426 CVE-2013-0427 CVE-2013-0428 CVE-2013-0429 CVE-2013-0430 CVE-2013-0432 CVE-2013-0433 CVE-2013-0434 CVE-2013-0435 CVE-2013-0438 CVE-2013-0440 CVE-2013-0441 CVE-2013-0442 CVE-2013-0443 CVE-2013-0444 CVE-2013-0445 CVE-2013-0446 CVE-2013-0448 CVE-2013-0449 CVE-2013-0450 CVE-2013-1473 CVE-2013-1475 CVE-2013-1476 CVE-2013-1478 CVE-2013-1480 CVE-2013-1481
+
+USN-1723-1: Qt vulnerabilities - 14th February 2013
+Richard J. Moore and Peter Hartmann discovered that Qt allowed redirecting requests from http to file schemes. If an attacker were able to perform a man-in-the-middle attack, this flaw could be exploited to view sensitive information. This issue only affected Ubuntu 11.10, Ubuntu 12.04 LTS, and Ubuntu 12.10. (CVE-2012-5624) Stephen ...
+CVE-2012-5624 CVE-2012-6093 CVE-2013-0254
+
+USN-1717-1: PostgreSQL vulnerability - 12th February 2013
+Sumit Soni discovered that PostgreSQL incorrectly handled calling a certain internal function with invalid arguments. An authenticated attacker could use this issue to cause PostgreSQL to crash, resulting in a denial of service.
+CVE-2013-0255
+
+USN-1681-4: Firefox regression - 5th February 2013
+
+USN-1681-1 fixed vulnerabilities in Firefox. Due to an upstream regression, Firefox suffered from instabilities when accessing some websites. This update fixes the problem. We apologize for the inconvenience. Original advisory details: Christoph Diehl, Christian Holler, Mats Palmgren, Chiaki Ishikawa, Bill Gianopoulos, Benoit Jacob, Gary Kwong, Robert O'Callahan, Jesse Ruderman, and ...
+LP: 1116725
+
+USN-1715-1: OpenStack Keystone vulnerability - 5th February 2013
+Dan Prince discovered that Keystone did not properly perform input validation when handling certain error conditions. An unauthenticated user could exploit this to cause a denial of service in Keystone API servers via disk space exhaustion.
+CVE-2013-0247
+
+USN-1714-1: QXL graphics driver vulnerability - 5th February 2013
+It was discovered that the QXL graphics driver incorrectly handled terminated connections. An attacker that could connect to a guest using SPICE and the QXL graphics driver could cause the guest to hang or crash, resulting in a denial of service.
+CVE-2013-0241
+
+USN-1704-2: Linux kernel (Quantal HWE) regression - 1st February 2013
+
+USN-1704-1 fixed vulnerabilities in the Linux kernel. Due to an unrelated regression inotify/fanotify stopped working after upgrading. This update fixes the problem. We apologize for the inconvenience. Original advisory details: Brad Spengler discovered a flaw in the Linux kernel's uname system call. An unprivileged user could exploit this flaw to ...
+LP: 1101666
+
+USN-1698-2: Linux kernel (OMAP4) regression - 1st February 2013
+
+USN-1698-1 fixed vulnerabilities in the Linux kernel. Due to an unrelated regression inotify/fanotify stopped working after upgrading. This update fixes the problem. We apologize for the inconvenience. Original advisory details: A flaw was discovered in the Linux kernel's handling of script execution when module loading is enabled. A local attacker ...
+LP: 1101666
+
+USN-1696-2: Linux kernel regression - 1st February 2013
+
+USN-1696-1 fixed vulnerabilities in the Linux kernel. Due to an unrelated regression inotify/fanotify stopped working after upgrading. This update fixes the problem. We apologize for the inconvenience. Original advisory details: Jon Howell reported a flaw in the Linux kernel's KVM (Kernel-based virtual machine) subsystem's handling of the XSAVE feature. On ...
+LP: 1101666
+
+USN-1713-1: Squid vulnerabilities - 30th January 2013
+It was discovered that squid's cachemgr.cgi was vulnerable to excessive resource use. A remote attacker could exploit this flaw to perform a denial of service attack on the server and other hosted services. (CVE-2012-5643) It was discovered that the patch for CVE-2012-5643 was incorrect. A remote attacker could exploit this ...
+CVE-2012-5643 CVE-2013-0189
+
+USN-1712-1: Inkscape vulnerabilities - 30th January 2013
+It was discoverd that Inkscape incorrectly handled XML external entities in SVG files. If a user were tricked into opening a specially-crafted SVG file, Inkscape could possibly include external files in drawings, resulting in information disclosure. (CVE-2012-5656) It was discovered that Inkscape attempted to open certain files from the /tmp ...
+CVE-2012-5656 CVE-2012-6076
+
+USN-1710-1: OpenStack Glance vulnerability - 29th January 2013
+Dan Prince discovered an issue in Glance error reporting. An authenticated attacker could exploit this to expose the Glance operator's Swift credentials for a misconfigured or otherwise unusable Swift endpoint.
+CVE-2013-0212
+
+USN-1709-1: OpenStack Nova vulnerability - 29th January 2013
+Phil Day discovered that nova-volume did not validate access to volumes. An authenticated attacker could exploit this to bypass intended access controls and boot from arbitrary volumes.
+CVE-2013-0208
+
+USN-1708-1: libvirt vulnerabilities - 29th January 2013
+Wenlong Huang discovered that libvirt incorrectly handled certain RPC calls. A remote attacker could exploit this and cause libvirt to crash, resulting in a denial of service. This issue only affected Ubuntu 12.04 LTS. (CVE-2012-4423) Tingting Zheng discovered that libvirt incorrectly handled cleanup under certain error conditions. A remote attacker ...
+CVE-2012-4423 CVE-2013-0170
+
+USN-1707-1: libssh vulnerability - 28th January 2013
+Yong Chuan Koh discovered that libssh incorrectly handled certain negotiation requests. A remote attacker could use this to cause libssh to crash, resulting in a denial of service.
+CVE-2013-0176
+
+USN-1705-1: Libav vulnerabilities - 28th January 2013
+It was discovered that Libav incorrectly handled certain malformed media files. If a user were tricked into opening a crafted media file, an attacker could cause a denial of service via application crash, or possibly execute arbitrary code with the privileges of the user invoking the program.
+CVE-2012-2783 CVE-2012-2791 CVE-2012-2797 CVE-2012-2798 CVE-2012-2801 CVE-2012-2802 CVE-2012-2803 CVE-2012-2804 CVE-2012-5144
+
+USN-1681-3: Firefox regression - 22nd January 2013
+
+USN-1681-1 fixed vulnerabilities in Firefox. Due to an upstream regression, some translations became unusable after upgrading. This update fixes the problem. We apologize for the inconvenience. Original advisory details: Christoph Diehl, Christian Holler, Mats Palmgren, Chiaki Ishikawa, Bill Gianopoulos, Benoit Jacob, Gary Kwong, Robert O'Callahan, Jesse Ruderman, and Julian Seward ...
+LP: 1098312
+
+USN-1704-1: Linux kernel (Quantal HWE) vulnerabilities - 22nd January 2013
+Brad Spengler discovered a flaw in the Linux kernel's uname system call. An unprivileged user could exploit this flaw to read kernel stack memory. (CVE-2012-0957) Jon Howell reported a flaw in the Linux kernel's KVM (Kernel-based virtual machine) subsystem's handling of the XSAVE feature. On hosts, using qemu userspace, without ...
+CVE-2012-0957 CVE-2012-4461 CVE-2012-4508 CVE-2012-4530 CVE-2012-4565 CVE-2012-5517 CVE-2012-5532 CVE-2013-1928
+
+USN-1703-1: MySQL vulnerabilities - 22nd January 2013
+Multiple security issues were discovered in MySQL and this update includes new upstream MySQL versions to fix these issues. MySQL has been updated to 5.1.67 in Ubuntu 10.04 LTS and Ubuntu 11.10. Ubuntu 12.04 LTS and Ubuntu 12.10 have been updated to MySQL 5.5.29. In addition to security fixes, the ...
+CVE-2012-0572 CVE-2012-0574 CVE-2012-0578 CVE-2012-1702 CVE-2012-1705 CVE-2012-5060 CVE-2012-5096 CVE-2012-5611 CVE-2012-5612 CVE-2013-0367 CVE-2013-0368 CVE-2013-0371 CVE-2013-0375 CVE-2013-0383 CVE-2013-0384 CVE-2013-0385 CVE-2013-0386 CVE-2013-0389
+
+USN-1702-1: PHP vulnerability - 22nd January 2013
+It was discovered that PHP incorrectly handled the openssl_encrypt function when used with an empty string. An attacker could use this flaw to cause PHP to disclose arbitrary memory contents and possibly expose sensitive information.
+CVE-2012-6113
+
+USN-1701-1: Vino vulnerability - 22nd January 2013
+It was discovered that Vino incorrectly transmitted clipboard activity before authenticating the remote connection. A remote attacker could connect to Vino and monitor clipboard activity.
+CVE-2012-4429
+
+USN-1698-1: Linux kernel (OMAP4) vulnerabilities - 17th January 2013
+A flaw was discovered in the Linux kernel's handling of script execution when module loading is enabled. A local attacker could exploit this flaw to cause a leak of kernel stack contents. (CVE-2012-4530) Florian Weimer discovered that hypervkvpd, which is distributed in the Linux kernel, was not correctly validating source ...
+CVE-2012-4530 CVE-2012-5532
+
+USN-1696-1: Linux kernel vulnerabilities - 17th January 2013
+Jon Howell reported a flaw in the Linux kernel's KVM (Kernel-based virtual machine) subsystem's handling of the XSAVE feature. On hosts, using qemu userspace, without the XSAVE feature an unprivileged local attacker could exploit this flaw to crash the system. (CVE-2012-4461) A flaw was discovered in the Linux kernel's handling ...
+CVE-2012-4461 CVE-2012-4530 CVE-2012-5532
+
+USN-1695-1: RPM vulnerabilities - 17th January 2013
+It was discovered that RPM incorrectly handled certain package headers. If a user or automated system were tricked into installing a specially crafted RPM package, an attacker could cause RPM to crash, resulting in a denial of service, or possibly execute arbitrary code.
+CVE-2011-3378 CVE-2012-0060 CVE-2012-0061 CVE-2012-0815
+
+USN-1692-1: QEMU vulnerability - 16th January 2013
+It was discovered that QEMU incorrectly handled certain e1000 packet sizes. In certain environments, an attacker may use this flaw in combination with large packets to cause a denial of service or execute arbitrary code in the guest.
+CVE-2012-6075
+
+USN-1687-2: NSPR update - 14th January 2013
+
+USN-1687-1 fixed a vulnerability NSS. This update provides the NSPR needed to use the new NSS. Original advisory details: Two intermediate CA certificates were mis-issued by the TURKTRUST certificate authority. If a remote attacker were able to perform a man-in-the-middle attack, this flaw could be exploited to view sensitive information.
+CVE-2013-0743
+
+USN-1687-1: NSS vulnerability - 14th January 2013
+Two intermediate CA certificates were mis-issued by the TURKTRUST certificate authority. If a remote attacker were able to perform a man-in-the-middle attack, this flaw could be exploited to view sensitive information.
+CVE-2013-0743
+
+USN-1686-1: FreeType vulnerabilities - 14th January 2013
+Mateusz Jurczyk discovered that FreeType did not correctly handle certain malformed BDF font files. If a user were tricked into using a specially crafted font file, a remote attacker could cause FreeType to crash or possibly execute arbitrary code with user privileges.
+CVE-2012-5668 CVE-2012-5669 CVE-2012-5670
+
+USN-1685-1: Tomcat vulnerabilities - 14th January 2013
+It was discovered that Tomcat incorrectly performed certain security constraint checks in the FORM authenticator. A remote attacker could possibly use this flaw with a specially-crafted URI to bypass security constraint checks. This issue only affected Ubuntu 10.04 LTS, Ubuntu 11.10 and Ubuntu 12.04 LTS. (CVE-2012-3546) It was discovered that ...
+CVE-2012-3546 CVE-2012-4431 CVE-2012-4534
+
+USN-1682-1: GnuPG vulnerability - 9th January 2013
+KB Sriram discovered that GnuPG incorrectly handled certain malformed keys. If a user or automated system were tricked into importing a malformed key, the GnuPG keyring could become corrupted.
+CVE-2012-6085
+
+USN-1681-2: Thunderbird vulnerabilities - 8th January 2013
+
+USN-1681-1 fixed vulnerabilities in Firefox. This update provides the corresponding updates for Thunderbird. Original advisory details: Christoph Diehl, Christian Holler, Mats Palmgren, Chiaki Ishikawa, Bill Gianopoulos, Benoit Jacob, Gary Kwong, Robert O'Callahan, Jesse Ruderman, and Julian Seward discovered multiple memory safety issues affecting Firefox. If the user were tricked into ...
+CVE-2012-5829 CVE-2013-0743 CVE-2013-0744 CVE-2013-0745 CVE-2013-0746 CVE-2013-0747 CVE-2013-0748 CVE-2013-0749 CVE-2013-0750 CVE-2013-0752 CVE-2013-0753 CVE-2013-0754 CVE-2013-0755 CVE-2013-0756 CVE-2013-0757 CVE-2013-0758 CVE-2013-0759 CVE-2013-0760 CVE-2013-0761 CVE-2013-0762 CVE-2013-0763 CVE-2013-0764 CVE-2013-0766 CVE-2013-0767 CVE-2013-0768 CVE-2013-0769 CVE-2013-0770 CVE-2013-0771 LP: 1096456
+
+USN-1681-1: Firefox vulnerabilities - 8th January 2013
+Christoph Diehl, Christian Holler, Mats Palmgren, Chiaki Ishikawa, Bill Gianopoulos, Benoit Jacob, Gary Kwong, Robert O'Callahan, Jesse Ruderman, and Julian Seward discovered multiple memory safety issues affecting Firefox. If the user were tricked into opening a specially crafted page, an attacker could possibly exploit these to cause a denial of ...
+CVE-2012-5829 CVE-2013-0743 CVE-2013-0744 CVE-2013-0745 CVE-2013-0746 CVE-2013-0747 CVE-2013-0748 CVE-2013-0749 CVE-2013-0750 CVE-2013-0752 CVE-2013-0753 CVE-2013-0754 CVE-2013-0755 CVE-2013-0756 CVE-2013-0757 CVE-2013-0758 CVE-2013-0759 CVE-2013-0760 CVE-2013-0761 CVE-2013-0762 CVE-2013-0763 CVE-2013-0764 CVE-2013-0766 CVE-2013-0767 CVE-2013-0768 CVE-2013-0769 CVE-2013-0770 CVE-2013-0771 LP: 1096387
+
+USN-1680-1: MoinMoin vulnerabilities - 29th December 2012
+It was discovered that MoinMoin did not properly sanitize its input when processing AnyWikiDraw and TWikiDraw actions. A remote attacker with write access could exploit this to overwrite arbitrary files and execute arbitrary code with the priviliges of the web server (user 'www-data'). It was discovered that MoinMoin also did ...
+LP: 1094599
+
+USN-1676-1: AppArmor update - 19th December 2012
+Dan Rosenberg discovered that the example AppArmor profile for chromium-browser could be escaped by calling xdg-settings with a crafted environment.
+LP: 1045986
+
+USN-1670-1: Linux kernel (OMAP4) vulnerability - 18th December 2012
+A flaw was discovered in the Linux kernel's handling of new hot-plugged memory. An unprivileged local user could exploit this flaw to cause a denial of service by crashing the system.
+CVE-2012-5517
+
+USN-1669-1: Linux kernel vulnerability - 18th December 2012
+A flaw was discovered in the Linux kernel's handling of new hot-plugged memory. An unprivileged local user could exploit this flaw to cause a denial of service by crashing the system.
+CVE-2012-5517
+
+USN-1668-1: Apport update - 17th December 2012
+Dan Rosenberg discovered that an application running under an AppArmor profile that allowed unconfined execution of apport-bug could escape confinement by calling apport-bug with a crafted environment. While not a vulnerability in apport itself, this update mitigates the issue by sanitizing certain variables in the apport-bug shell script.
+LP: 1045986
+
+USN-1666-1: Aptdaemon vulnerability - 17th December 2012
+It was discovered that Aptdaemon incorrectly validated PPA GPG keys when importing from a keyserver. If a remote attacker were able to perform a man-in-the-middle attack, this flaw could be exploited to install altered package repository GPG keys.
+CVE-2012-0962
+
+USN-1662-1: APT vulnerability - 12th December 2012
+It was discovered that APT set inappropriate permissions on the term.log file. A local attacker could use this flaw to possibly obtain sensitive information.
+CVE-2012-0961
+
+USN-1659-1: GIMP vulnerability - 10th December 2012
+It was discovered that GIMP incorrectly handled malformed XWD files. If a user were tricked into opening a specially crafted XWD file, an attacker could cause GIMP to crash, or possibly execute arbitrary code with the user's privileges.
+CVE-2012-5576
+
+USN-1658-1: MySQL vulnerability - 10th December 2012
+It was discovered that MySQL incorrectly handled certain long arguments. A remote authenticated attacker could use this issue to possibly execute arbitrary code.
+CVE-2012-5611
+
+USN-1657-1: Bind vulnerability - 6th December 2012
+It was discovered that Bind incorrectly handled certain crafted queries when DNS64 was enabled. A remote attacker could use this flaw to cause Bind to crash, resulting in a denial of service.
+CVE-2012-5688
+
+USN-1656-1: Libxml2 vulnerability - 5th December 2012
+It was discovered that libxml2 had a heap-based buffer underflow when parsing entities. If a user or automated system were tricked into processing a specially crafted XML document, applications linked against libxml2 could be made to crash or possibly execute arbitrary code.
+CVE-2012-5134
+
+USN-1655-1: LibTIFF vulnerability - 5th December 2012
+It was discovered that LibTIFF incorrectly handled certain malformed images using the DOTRANGE tag. If a user or automated system were tricked into opening a specially crafted TIFF image, a remote attacker could crash the application, leading to a denial of service, or possibly execute arbitrary code with user privileges.
+CVE-2012-5581
+
+USN-1654-1: CUPS vulnerability - 5th December 2012
+It was discovered that users in the lpadmin group could modify certain CUPS configuration options to escalate privileges. An attacker could use this to potentially gain root privileges.
+CVE-2012-5519
+
+USN-1638-3: Firefox regressions - 3rd December 2012
+
+USN-1638-1 fixed vulnerabilities in Firefox. The new packages introduced regressions in cookies handling and the User Agent string. This update fixes the problem. Original advisory details: Gary Kwong, Jesse Ruderman, Christian Holler, Bob Clary, Kyle Huey, Ed Morley, Chris Lord, Boris Zbarsky, Julian Seward, Bill McCloskey, and Andrew McCreight discovered ...
+LP: 1082446 LP: 1084548
+
+USN-1645-1: Linux kernel (OMAP4) vulnerabilities - 30th November 2012
+Brad Spengler discovered a flaw in the Linux kernel's uname system call. An unprivileged user could exploit this flaw to read kernel stack memory. (CVE-2012-0957) Dmitry Monakhov reported a race condition flaw the Linux ext4 filesystem that can expose stale data. An unprivileged user could exploit this flaw to cause ...
+CVE-2012-0957 CVE-2012-4508 CVE-2012-4565 CVE-2012-6536 CVE-2012-6537 CVE-2012-6538 CVE-2013-0309 CVE-2013-1826 CVE-2013-1928
+
+USN-1644-1: Linux kernel vulnerabilities - 30th November 2012
+Brad Spengler discovered a flaw in the Linux kernel's uname system call. An unprivileged user could exploit this flaw to read kernel stack memory. (CVE-2012-0957) Dmitry Monakhov reported a race condition flaw the Linux ext4 filesystem that can expose stale data. An unprivileged user could exploit this flaw to cause ...
+CVE-2012-0957 CVE-2012-4508 CVE-2012-4565 CVE-2012-6536 CVE-2012-6537 CVE-2012-6538 CVE-2013-0309 CVE-2013-1826 CVE-2013-1928
+
+USN-1643-1: Perl vulnerabilities - 29th November 2012
+It was discovered that the decode_xs function in the Encode module is vulnerable to a heap-based buffer overflow via a crafted Unicode string. An attacker could use this overflow to cause a denial of service. (CVE-2011-2939) It was discovered that the 'new' constructor in the Digest module is vulnerable to ...
+CVE-2011-2939 CVE-2011-3597 CVE-2012-5195 CVE-2012-5526
+
+USN-1642-1: Lynx vulnerabilities - 29th November 2012
+Dan Rosenberg discovered a heap-based buffer overflow in Lynx. If a user were tricked into opening a specially crafted page, a remote attacker could cause a denial of service via application crash, or possibly execute arbitrary code as the user invoking the program. This issue only affected Ubuntu 10.04 LTS. ...
+CVE-2010-2810 CVE-2012-5821
+
+USN-1641-1: OpenStack Keystone vulnerabilities - 28th November 2012
+Vijaya Erukala discovered that Keystone did not properly invalidate EC2-style credentials such that if credentials were removed from a tenant, an authenticated and authorized user using those credentials may still be allowed access beyond the account owner's expectations. (CVE-2012-5571) It was discovered that Keystone did not properly implement token expiration. ...
+CVE-2012-5563 CVE-2012-5571
+
+USN-1640-1: libssh vulnerabilities - 26th November 2012
+Xi Wang and Florian Weimer discovered that libssh incorrectly handled memory. A remote attacker could use this to cause libssh to crash, resulting in a denial of service, or possibly execute arbitrary code. (CVE-2012-4559, CVE-2012-4560, CVE-2012-4561, CVE-2012-4562)
+CVE-2012-4559 CVE-2012-4560 CVE-2012-4561 CVE-2012-4562
+
+USN-1638-2: ubufox update - 21st November 2012
+
+USN-1638-1 fixed vulnerabilities in Firefox. This update provides an updated ubufox package for use with the latest Firefox. Original advisory details: Gary Kwong, Jesse Ruderman, Christian Holler, Bob Clary, Kyle Huey, Ed Morley, Chris Lord, Boris Zbarsky, Julian Seward, Bill McCloskey, and Andrew McCreight discovered multiple memory safety issues affecting ...
+LP: 1080211
+
+USN-1638-1: Firefox vulnerabilities - 21st November 2012
+Gary Kwong, Jesse Ruderman, Christian Holler, Bob Clary, Kyle Huey, Ed Morley, Chris Lord, Boris Zbarsky, Julian Seward, Bill McCloskey, and Andrew McCreight discovered multiple memory safety issues affecting Firefox. If the user were tricked into opening a specially crafted page, an attacker could possibly exploit these to cause a ...
+CVE-2012-4201 CVE-2012-4202 CVE-2012-4203 CVE-2012-4204 CVE-2012-4205 CVE-2012-4207 CVE-2012-4208 CVE-2012-4209 CVE-2012-4210 CVE-2012-4212 CVE-2012-4213 CVE-2012-4214 CVE-2012-4215 CVE-2012-4216 CVE-2012-4217 CVE-2012-4218 CVE-2012-5829 CVE-2012-5830 CVE-2012-5833 CVE-2012-5835 CVE-2012-5836 CVE-2012-5837 CVE-2012-5838 CVE-2012-5839 CVE-2012-5840 CVE-2012-5841 CVE-2012-5842 CVE-2012-5843 LP: 1080211
+
+USN-1636-1: Thunderbird vulnerabilities - 21st November 2012
+Gary Kwong, Jesse Ruderman, Christian Holler, Bob Clary, Kyle Huey, Ed Morley, Chris Lord, Boris Zbarsky, Julian Seward, Bill McCloskey, and Andrew McCreight discovered several memory corruption flaws in Thunderbird. If a user were tricked into opening a malicious website and had JavaScript enabled, an attacker could exploit these to ...
+CVE-2012-4201 CVE-2012-4202 CVE-2012-4204 CVE-2012-4205 CVE-2012-4207 CVE-2012-4208 CVE-2012-4209 CVE-2012-4212 CVE-2012-4213 CVE-2012-4214 CVE-2012-4215 CVE-2012-4216 CVE-2012-4217 CVE-2012-4218 CVE-2012-5829 CVE-2012-5830 CVE-2012-5833 CVE-2012-5835 CVE-2012-5836 CVE-2012-5838 CVE-2012-5839 CVE-2012-5840 CVE-2012-5841 CVE-2012-5842 CVE-2012-5843 LP: 1080212
+
+USN-1637-1: Tomcat vulnerabilities - 21st November 2012
+It was discovered that the Apache Tomcat HTTP NIO connector incorrectly handled header data. A remote attacker could cause a denial of service by sending requests with a large amount of header data. (CVE-2012-2733) It was discovered that Apache Tomcat incorrectly handled DIGEST authentication. A remote attacker could possibly use ...
+CVE-2012-2733 CVE-2012-5885 CVE-2012-5886 CVE-2012-5887
+
+USN-1632-2: Django regression - 20th November 2012
+
+USN-1632-1 fixed a vulnerability in Django. The upstream fix introduced testsuite failures when ADMINS and/or MANAGERS were defined in settings.py. This update fixes the problem. We apologize for the inconvenience. Original advisory details: James Kettle discovered Django did not properly filter the Host HTTP header when processing certain requests. An ...
+LP: 1080204
+
+USN-1634-1: Python Keyring vulnerabilities - 20th November 2012
+Dwayne Litzenberger discovered that Python Keyring's CryptedFileKeyring file format used weak cryptography. A local attacker may use this issue to brute-force CryptedFileKeyring keyring files. This issue only affected Ubuntu 11.10 and Ubuntu 12.04 LTS. (CVE-2012-4571) It was discovered that Python Keyring created keyring files with insecure permissions. A local attacker ...
+CVE-2012-4571 LP: 1004845
+
+USN-1632-1: Django vulnerability - 15th November 2012
+James Kettle discovered Django did not properly filter the Host HTTP header when processing certain requests. An attacker could exploit this to generate and display arbitrary URLs to users.
+CVE-2012-4520
+
+USN-1631-1: LibTIFF vulnerabilities - 15th November 2012
+It was discovered that LibTIFF incorrectly handled certain malformed images using the PixarLog compression format. If a user or automated system were tricked into opening a specially crafted TIFF image, a remote attacker could crash the application, leading to a denial of service, or possibly execute arbitrary code with user ...
+CVE-2012-4447 CVE-2012-4564
+
+USN-1630-1: Libav vulnerabilities - 12th November 2012
+It was discovered that Libav incorrectly handled certain malformed media files. If a user were tricked into opening a crafted media file, an attacker could cause a denial of service via application crash, or possibly execute arbitrary code with the privileges of the user invoking the program.
+CVE-2012-2772 CVE-2012-2775 CVE-2012-2776 CVE-2012-2777 CVE-2012-2779 CVE-2012-2784 CVE-2012-2786 CVE-2012-2787 CVE-2012-2788 CVE-2012-2789 CVE-2012-2790 CVE-2012-2793 CVE-2012-2794 CVE-2012-2796 CVE-2012-2798 CVE-2012-2800 CVE-2012-2801 CVE-2012-2802
+
+USN-1629-1: libproxy vulnerabilities - 12th November 2012
+Tomas Mraz discovered that libproxy incorrectly handled certain PAC files. A remote attacker could use this issue to cause libproxy to crash, or to possibly execute arbitrary code. (CVE-2012-4504, CVE-2012-4505)
+CVE-2012-4504 CVE-2012-4505
+
+USN-1628-1: Qt vulnerability - 8th November 2012
+Juliano Rizzo and Thai Duong discovered a flaw in the Transport Layer Security (TLS) protocol when it is used with data compression. If an attacker were able to perform a man-in-the-middle attack, this flaw could be exploited to view sensitive information. This update disables TLS data compression in Qt by ...
+CVE-2012-4929
+
+USN-1627-1: Apache HTTP Server vulnerabilities - 8th November 2012
+It was discovered that the mod_negotiation module incorrectly handled certain filenames, which could result in browsers becoming vulnerable to cross-site scripting attacks when processing the output. With cross-site scripting vulnerabilities, if a user were tricked into viewing server output during a crafted server request, a remote attacker could exploit this ...
+CVE-2012-2687 CVE-2012-4929
+
+USN-1626-1: Glance vulnerability - 8th November 2012
+Gabe Westmaas discovered that Glance did not always properly enforce access controls when deleting images. An authenticated user could delete arbitrary images by using the v1 API under certain circumstances.
+CVE-2012-4573
+
+USN-1625-1: Icedtea-Web vulnerability - 7th November 2012
+Arthur Gerkis discovered a buffer overflow in the Icedtea-Web plugin. If a user were tricked into opening a malicious website, an attacker could cause the plugin to crash or possibly execute arbitrary code as the user invoking the program.
+CVE-2012-4540
+
+USN-1623-1: Mesa vulnerability - 5th November 2012
+It was discovered that Mesa incorrectly handled certain arrays. An attacker could use this issue to cause Mesa to crash, resulting in a denial of service, or possibly execute arbitrary code.
+CVE-2012-2864
+
+USN-1622-1: Munin vulnerabilities - 5th November 2012
+It was discovered that the Munin qmailscan plugin incorrectly handled temporary files. A local attacker could use this issue to possibly overwrite arbitrary files. This issue only affected Ubuntu 10.04 LTS, Ubuntu 11.10, and Ubuntu 12.04 LTS. (CVE-2012-2103) It was discovered that Munin incorrectly handled plugin state file permissions. An ...
+CVE-2012-2103 CVE-2012-3512 CVE-2012-3513
+
+USN-1621-1: MySQL vulnerabilities - 5th November 2012
+Multiple security issues were discovered in MySQL and this update includes new upstream MySQL versions to fix these issues. MySQL has been updated to 5.1.66 in Ubuntu 10.04 LTS and Ubuntu 11.10. Ubuntu 12.04 LTS and Ubuntu 12.10 have been updated to MySQL 5.5.28. In addition to security fixes, the ...
+CVE-2012-3144 CVE-2012-3147 CVE-2012-3149 CVE-2012-3150 CVE-2012-3156 CVE-2012-3158 CVE-2012-3160 CVE-2012-3163 CVE-2012-3166 CVE-2012-3167 CVE-2012-3173 CVE-2012-3177 CVE-2012-3180 CVE-2012-3197 LP: 1068158
+
+USN-1620-2: Thunderbird vulnerabilities - 29th October 2012
+
+USN-1620-1 fixed vulnerabilities in Firefox. This update provides the corresponding updates for Thunderbird. Please note that Thunderbird is only affected by window.location issues through RSS feeds and extensions that load web content. Original advisory details: Mariusz Mlynski and others discovered several flaws in Firefox that allowed a remote attacker to ...
+CVE-2012-4194 CVE-2012-4195 CVE-2012-4196 LP: 1072362
+
+USN-1620-1: Firefox vulnerabilities - 26th October 2012
+Mariusz Mlynski and others discovered several flaws in Firefox that allowed a remote attacker to conduct cross-site scripting (XSS) attacks. (CVE-2012-4194, CVE-2012-4195) Antoine Delignat-Lavaud discovered a flaw in the way Firefox handled the Location object. If a user were tricked into opening a specially crafted page, a remote attacker could ...
+CVE-2012-4194 CVE-2012-4195 CVE-2012-4196
+
+USN-1619-1: OpenJDK vulnerabilities - 26th October 2012
+Several information disclosure vulnerabilities were discovered in the OpenJDK JRE. (CVE-2012-3216, CVE-2012-5069, CVE-2012-5072, CVE-2012-5075, CVE-2012-5077, CVE-2012-5085) Vulnerabilities were discovered in the OpenJDK JRE related to information disclosure and data integrity. (CVE-2012-4416, CVE-2012-5071) Several vulnerabilities were discovered in the OpenJDK JRE related to information disclosure and data integrity. An attacker could ...
+CVE-2012-1531 CVE-2012-1532 CVE-2012-1533 CVE-2012-3143 CVE-2012-3159 CVE-2012-3216 CVE-2012-4416 CVE-2012-5067 CVE-2012-5068 CVE-2012-5069 CVE-2012-5070 CVE-2012-5071 CVE-2012-5072 CVE-2012-5073 CVE-2012-5074 CVE-2012-5075 CVE-2012-5076 CVE-2012-5077 CVE-2012-5079 CVE-2012-5081 CVE-2012-5083 CVE-2012-5084 CVE-2012-5085 CVE-2012-5086 CVE-2012-5087 CVE-2012-5088 CVE-2012-5089
+
+USN-1618-1: Exim vulnerability - 26th October 2012
+It was discovered that Exim incorrectly handled DKIM DNS decoding. This flaw could allow a remote attacker to execute arbitrary code.
+CVE-2012-5671
+
+USN-1617-1: WebKit vulnerabilities - 25th October 2012
+A large number of security issues were discovered in the WebKit browser and JavaScript engines. If a user were tricked into viewing a malicious website, a remote attacker could exploit a variety of issues related to web browser security, including cross-site scripting attacks, denial of service attacks, and arbitrary code ...
+CVE-2011-3031 CVE-2011-3038 CVE-2011-3042 CVE-2011-3043 CVE-2011-3044 CVE-2011-3051 CVE-2011-3053 CVE-2011-3059 CVE-2011-3060 CVE-2011-3064 CVE-2011-3067 CVE-2011-3076 CVE-2011-3081 CVE-2011-3086 CVE-2011-3090 CVE-2012-1521 CVE-2012-3598 CVE-2012-3601 CVE-2012-3604 CVE-2012-3611 CVE-2012-3612 CVE-2012-3617 CVE-2012-3625 CVE-2012-3626 CVE-2012-3627 CVE-2012-3628 CVE-2012-3645 CVE-2012-3652 CVE-2012-3657 CVE-2012-3669 CVE-2012-3670 CVE-2012-3671 CVE-2012-3672 CVE-2012-3674 LP: 1058339
+
+USN-1615-1: Python 3.2 vulnerabilities - 23rd October 2012
+It was discovered that Python distutils contained a race condition when creating the ~/.pypirc file. A local attacker could exploit this to obtain sensitive information. (CVE-2011-4944) It was discovered that SimpleXMLRPCServer did not properly validate its input when handling HTTP POST requests. A remote attacker could exploit this to cause ...
+CVE-2011-4944 CVE-2012-0845 CVE-2012-1150 CVE-2012-2135
+
+USN-1614-1: Ruby vulnerabilities - 22nd October 2012
+Tyler Hicks and Shugo Maeda discovered that Ruby incorrectly allowed untainted strings to be modified in protective safe levels. An attacker could use this flaw to bypass intended access restrictions. USN-1602-1 fixed these vulnerabilities in other Ubuntu releases. This update provides the corresponding updates for Ubuntu 12.10. (CVE-2012-4464, CVE-2012-4466) Peter ...
+CVE-2012-4464 CVE-2012-4466 CVE-2012-4522
+
+USN-1612-1: libgssglue vulnerability - 15th October 2012
+It was discovered that libgssglue incorrectly handled the GSSAPI_MECH_CONF environment variable when running a privileged binary. A local attacker could exploit this to gain root privileges. (CVE-2011-2709)
+CVE-2011-2709
+
+USN-1611-1: Thunderbird vulnerabilities - 12th October 2012
+Henrik Skupin, Jesse Ruderman, Christian Holler, Soroush Dalili and others discovered several memory corruption flaws in Thunderbird. If a user were tricked into opening a malicious website and had JavaScript enabled, an attacker could exploit these to execute arbitrary JavaScript code within the context of another website or arbitrary code ...
+CVE-2012-3982 CVE-2012-3983 CVE-2012-3984 CVE-2012-3985 CVE-2012-3986 CVE-2012-3988 CVE-2012-3989 CVE-2012-3990 CVE-2012-3991 CVE-2012-3992 CVE-2012-3993 CVE-2012-3994 CVE-2012-3995 CVE-2012-4179 CVE-2012-4180 CVE-2012-4181 CVE-2012-4182 CVE-2012-4183 CVE-2012-4184 CVE-2012-4185 CVE-2012-4186 CVE-2012-4187 CVE-2012-4188 CVE-2012-4191 CVE-2012-4192 CVE-2012-4193 LP: 1062587 LP: 1065292
+
+USN-1610-1: Linux kernel vulnerability - 12th October 2012
+Pablo Neira Ayuso discovered a flaw in the credentials of netlink messages. An unprivileged local attacker could exploit this by getting a netlink based service, that relies on netlink credentials, to perform privileged actions. (CVE-2012-3520) Mathias Krause discovered information leak in the Linux kernel's compat ioctl interface. A local user ...
+CVE-2012-3520 CVE-2012-6539 CVE-2012-6540 CVE-2012-6541 CVE-2012-6542 CVE-2012-6544 CVE-2012-6545 CVE-2012-6546 CVE-2013-1827
+
+USN-1608-1: Firefox vulnerabilities - 11th October 2012
+It was discovered that the browser engine used in Firefox contained a memory corruption flaw. If a user were tricked into opening a specially crafted web page, a remote attacker could cause Firefox to crash or potentially execute arbitrary code as the user invoking the program. (CVE-2012-4191) It was discovered ...
+CVE-2012-4191 CVE-2012-4192 LP: 1065285
+
+USN-1605-1: Quagga vulnerability - 11th October 2012
+It was discovered that Quagga incorrectly handled certain malformed messages. A remote attacker could use this flaw to cause Quagga to crash, resulting in a denial of service.
+CVE-2012-1820
+
+USN-1604-1: MoinMoin vulnerabilities - 11th October 2012
+It was discovered that MoinMoin did not properly sanitize certain input, resulting in a cross-site scripting (XSS) vulnerability. With cross-site scripting vulnerabilities, if a user were tricked into viewing server output during a crafted server request, a remote attacker could exploit this to modify the contents, or steal confidential data, ...
+CVE-2011-1058 CVE-2012-4404
+
+USN-1603-1: Ruby vulnerabilities - 10th October 2012
+Shugo Maedo and Vit Ondruch discovered that Ruby incorrectly allowed untainted strings to be modified in protective safe levels. An attacker could use this flaw to bypass intended access restrictions. (CVE-2012-4466, CVE-2012-4481)
+CVE-2012-4466 CVE-2012-4481
+
+USN-1602-1: Ruby vulnerabilities - 10th October 2012
+Tyler Hicks and Shugo Maeda discovered that Ruby incorrectly allowed untainted strings to be modified in protective safe levels. An attacker could use this flaw to bypass intended access restrictions. (CVE-2012-4464, CVE-2012-4466)
+CVE-2012-4464 CVE-2012-4466
+
+USN-1601-1: Bind vulnerability - 10th October 2012
+Jake Montgomery discovered that Bind incorrectly handled certain specific combinations of RDATA. A remote attacker could use this flaw to cause Bind to crash, resulting in a denial of service.
+CVE-2012-5166
+
+USN-1600-1: Firefox vulnerabilities - 9th October 2012
+Henrik Skupin, Jesse Ruderman, Christian Holler, Soroush Dalili and others discovered several memory corruption flaws in Firefox. If a user were tricked into opening a specially crafted web page, a remote attacker could cause Firefox to crash or potentially execute arbitrary code as the user invoking the program. (CVE-2012-3982, CVE-2012-3983, ...
+CVE-2012-3982 CVE-2012-3983 CVE-2012-3984 CVE-2012-3985 CVE-2012-3986 CVE-2012-3988 CVE-2012-3989 CVE-2012-3990 CVE-2012-3991 CVE-2012-3992 CVE-2012-3993 CVE-2012-3994 CVE-2012-3995 CVE-2012-4179 CVE-2012-4180 CVE-2012-4181 CVE-2012-4182 CVE-2012-4183 CVE-2012-4184 CVE-2012-4185 CVE-2012-4186 CVE-2012-4187 CVE-2012-4188
+
+USN-1599-1: Linux kernel (OMAP4) vulnerability - 9th October 2012
+Pablo Neira Ayuso discovered a flaw in the credentials of netlink messages. An unprivileged local attacker could exploit this by getting a netlink based service, that relies on netlink credentials, to perform privileged actions. (CVE-2012-3520) Mathias Krause discovered information leak in the Linux kernel's compat ioctl interface. A local user ...
+CVE-2012-3520 CVE-2012-6539 CVE-2012-6540 CVE-2012-6541 CVE-2012-6542 CVE-2012-6544 CVE-2012-6545 CVE-2012-6546 CVE-2013-1827
+
+USN-1595-1: libxslt vulnerabilities - 4th October 2012
+Chris Evans discovered that libxslt incorrectly handled generate-id XPath functions. If a user or automated system were tricked into processing a specially crafted XSLT document, a remote attacker could obtain potentially sensitive information. This issue only affected Ubuntu 8.04 LTS, Ubuntu 10.04 LTS and Ubuntu 11.04. (CVE-2011-1202) It was discovered ...
+CVE-2011-1202 CVE-2011-3970 CVE-2012-2825 CVE-2012-2870 CVE-2012-2871 CVE-2012-2893
+
+USN-1576-2: DBus regressions - 4th October 2012
+
+USN-1576-1 fixed vulnerabilities in DBus. The update caused a regression for certain services launched from the activation helper, and caused an unclean shutdown on upgrade. This update fixes the problem. We apologize for the inconvenience. Original advisory details: Sebastian Krahmer discovered that DBus incorrectly handled environment variables when running with ...
+CVE-2012-3524
+
+USN-1593-1: devscripts vulnerabilities - 2nd October 2012
+Raphael Geissert discovered that the debdiff.pl tool incorrectly handled shell metacharacters. If a user or automated system were tricked into processing a specially crafted filename, a remote attacher could possibly execute arbitrary code. (CVE-2012-0212) Raphael Geissert discovered that the dscverify tool incorrectly escaped arguments to external commands. If a user ...
+CVE-2012-0212 CVE-2012-2240 CVE-2012-2241 CVE-2012-2242 CVE-2012-3500
+
+USN-1591-1: xdiagnose update - 2nd October 2012
+Alec Warner discovered that xdiagnose improperly handled temporary files in welcome.py when creating user-initiated archive files. While failsafeX does not use the vulnerable code, this update removes this functionality to protect any 3rd party applications which import the vulnerable code. In the default Ubuntu installation, this should be prevented by ...
+LP: 1036211
+
+USN-1590-1: QEMU vulnerability - 2nd October 2012
+It was discovered that QEMU incorrectly handled certain VT100 escape sequences. A guest user with access to an emulated character device could use this flaw to cause QEMU to crash, or possibly execute arbitrary code on the host.
+CVE-2012-3515
+
+USN-1589-1: GNU C Library vulnerabilities - 1st October 2012
+It was discovered that positional arguments to the printf() family of functions were not handled properly in the GNU C Library. An attacker could possibly use this to cause a stack-based buffer overflow, creating a denial of service or possibly execute arbitrary code. (CVE-2012-3404, CVE-2012-3405, CVE-2012-3406) It was discovered that ...
+CVE-2012-3404 CVE-2012-3405 CVE-2012-3406 CVE-2012-3480
+
+USN-1588-1: Software Properties vulnerability - 1st October 2012
+It was discovered that the apt-add-repository tool incorrectly validated PPA GPG keys when importing from a keyserver. If a remote attacker were able to perform a man-in-the-middle attack, this flaw could be exploited to install altered package repository GPG keys.
+LP: 1016643
+
+USN-1551-2: Thunderbird regressions - 28th September 2012
+
+USN-1551-1 fixed vulnerabilities in Thunderbird. The new package caused a regression in the message editor and certain performance regressions as well. This update fixes the problems. Original advisory details: Gary Kwong, Christian Holler, Jesse Ruderman, Steve Fink, Bob Clary, Andrew Sutherland, Jason Smith, John Schoenick, Vladimir Vukicevic and Daniel Holbert ...
+LP: 1049428
+
+USN-1587-1: libxml2 vulnerability - 27th September 2012
+Juri Aedla discovered that libxml2 incorrectly handled certain memory operations. If a user or application linked against libxml2 were tricked into opening a specially crafted XML file, an attacker could cause the application to crash or possibly execute arbitrary code with the privileges of the user invoking the program.
+CVE-2012-2807
+
+USN-1586-1: Emacs vulnerabilities - 27th September 2012
+Hiroshi Oota discovered that Emacs incorrectly handled search paths. If a user were tricked into opening a file with Emacs, a local attacker could execute arbitrary Lisp code with the privileges of the user invoking the program. (CVE-2012-0035) Paul Ling discovered that Emacs incorrectly handled certain eval forms in local-variable ...
+CVE-2012-0035 CVE-2012-3479
+
+USN-1585-1: FreeRADIUS vulnerability - 26th September 2012
+Timo Warns discovered that FreeRADIUS incorrectly handled certain long timestamps in client certificates. A remote attacker could exploit this flaw and cause the FreeRADIUS server to crash, resulting in a denial of service, or possibly execute arbitrary code. The default compiler options for affected releases should reduce the vulnerability to ...
+CVE-2012-3547
+
+USN-1584-1: Transmission vulnerability - 26th September 2012
+Justin C. Klein Keane discovered that the Transmission web client incorrectly escaped certain strings. If a user were tricked into opening a specially crafted torrent file, an attacker could possibly exploit this to conduct cross-site scripting (XSS) attacks.
+CVE-2012-4037
+
+USN-1583-1: Ruby vulnerabilities - 25th September 2012
+It was discovered that Ruby incorrectly allowed untainted strings to be modified in protective safe levels. An attacker could use this flaw to bypass intended access restrictions. (CVE-2011-1005) John Firebaugh discovered that the RubyGems remote gem fetcher did not properly verify SSL certificates. A remote attacker could exploit this to ...
+CVE-2011-1005 CVE-2012-2125 CVE-2012-2126
+
+USN-1582-1: RubyGems vulnerabilities - 25th September 2012
+John Firebaugh discovered that the RubyGems remote gem fetcher did not properly verify SSL certificates. A remote attacker could exploit this to perform a man in the middle attack to alter gem files being downloaded for installation. (CVE-2012-2126) John Firebaugh discovered that the RubyGems remote gem fetcher allowed redirection from ...
+CVE-2012-2125 CVE-2012-2126
+
+USN-1580-1: Linux kernel (OMAP4) vulnerabilities - 21st September 2012
+Ben Hutchings reported a flaw in the Linux kernel with some network drivers that support TSO (TCP segment offload). A local or peer user could exploit this flaw to to cause a denial of service. (CVE-2012-3412) Jay Fenlason and Doug Ledford discovered a bug in the Linux kernel implementation of ...
+CVE-2012-3412 CVE-2012-3430 CVE-2012-6547 CVE-2013-0310
+
+USN-1579-1: Linux kernel vulnerabilities - 21st September 2012
+Ben Hutchings reported a flaw in the Linux kernel with some network drivers that support TSO (TCP segment offload). A local or peer user could exploit this flaw to to cause a denial of service. (CVE-2012-3412) Jay Fenlason and Doug Ledford discovered a bug in the Linux kernel implementation of ...
+CVE-2012-3412 CVE-2012-3430 CVE-2012-6547 CVE-2013-0310
+
+USN-1576-1: DBus vulnerability - 20th September 2012
+Sebastian Krahmer discovered that DBus incorrectly handled environment variables when running with elevated privileges. A local attacker could possibly exploit this flaw with a setuid binary and gain root privileges.
+CVE-2012-3524
+
+USN-1571-1: DHCP vulnerability - 18th September 2012
+Glen Eustace discovered that the DHCP server incorrectly handled IPv6 expiration times. A remote attacker could use this issue to cause DHCP to crash, resulting in a denial of service. This issue only affected Ubuntu 11.04, Ubuntu 11.10 and Ubuntu 12.04 LTS. (CVE-2012-3955) Dan Rosenberg discovered that the DHCP AppArmor ...
+CVE-2012-3955 LP: 1016643
+
+USN-1570-1: GnuPG vulnerability - 17th September 2012
+It was discovered that GnuPG used a short ID when downloading keys from a keyserver, even if a long ID was requested. An attacker could possibly use this to return a different key with a duplicate short key id.
+LP: 1016643
+
+USN-1569-1: PHP vulnerabilities - 17th September 2012
+It was discovered that PHP incorrectly handled certain character sequences when applying HTTP response-splitting protection. A remote attacker could create a specially-crafted URL and inject arbitrary headers. (CVE-2011-1398, CVE-2012-4388) It was discovered that PHP incorrectly handled directories with a large number of files. This could allow a remote attacker to ...
+CVE-2011-1398 CVE-2012-2688 CVE-2012-3450 CVE-2012-4388
+
+USN-1566-1: Bind vulnerability - 13th September 2012
+It was discovered that Bind incorrectly handled certain specially crafted long resource records. A remote attacker could use this flaw to cause Bind to crash, resulting in a denial of service.
+CVE-2012-4244
+
+USN-1565-1: OpenStack Horizon vulnerability - 13th September 2012
+Thomas Biege discovered that the Horizon authentication mechanism did not validate the next parameter. An attacker could use this to construct a link to legitimate OpenStack web dashboard that redirected the user to a malicious website after authentication.
+CVE-2012-3540
+
+USN-1564-1: OpenStack Keystone vulnerability - 13th September 2012
+Dolph Mathews discovered that when roles are granted and revoked to users in Keystone, pre-existing tokens were not updated or invalidated to take the new roles into account. An attacker could use this to continue to access resources that have been revoked.
+CVE-2012-4413
+
+USN-1548-2: Firefox regression - 11th September 2012
+
+USN-1548-1 fixed vulnerabilities in Firefox. The new package caused a regression in Private Browsing which could leak sites visited to the browser cache. This update fixes the problem. Original advisory details: Gary Kwong, Christian Holler, Jesse Ruderman, Steve Fink, Bob Clary, Andrew Sutherland, Jason Smith, John Schoenick, Vladimir Vukicevic and ...
+LP: 1047667
+
+USN-1527-2: XML-RPC for C and C++ vulnerabilities - 10th September 2012
+
+USN-1527-1 fixed vulnerabilities in Expat. This update provides the corresponding updates for XML-RPC for C and C++. Both issues described in the original advisory affected XML-RPC for C and C++ in Ubuntu 10.04 LTS, 11.04, 11.10 and 12.04 LTS. Original advisory details: It was discovered that Expat computed hash values ...
+CVE-2012-0876 CVE-2012-1148
+
+USN-1561-1: ubiquity-slideshow-ubuntu vulnerability - 10th September 2012
+Paul Mutton discovered that ubiquity-slideshow-ubuntu incorrectly handled the Twitter feed displayed during system installation. A remote attacker could use this flaw to inject code into the Twitter feed and read arbitrary files off the filesystem during system installation. This flaw has been resolved in the Ubuntu 12.04.1 LTS installation images ...
+CVE-2012-0956
+
+USN-1560-1: Django vulnerabilities - 10th September 2012
+It was discovered that Django incorrectly validated the scheme of a redirect target. If a user were tricked into opening a specially crafted URL, an attacker could possibly exploit this to conduct cross-site scripting (XSS) attacks. (CVE-2012-3442) It was discovered that Django incorrectly handled validating certain images. A remote attacker ...
+CVE-2012-3442 CVE-2012-3443 CVE-2012-3444
+
+USN-1559-1: GIMP vulnerabilities - 10th September 2012
+Joseph Sheridan discovered that GIMP incorrectly handled certain malformed headers in FIT files. If a user were tricked into opening a specially crafted FIT image file, an attacker could cause GIMP to crash. (CVE-2012-3236) Murray McAllister discovered that GIMP incorrectly handled malformed KiSS palette files. If a user were tricked ...
+CVE-2012-3236 CVE-2012-3403 CVE-2012-3481
+
+USN-1553-1: OpenJDK 6 vulnerabilities - 3rd September 2012
+It was discovered that the Beans component in OpenJDK 6 did not properly prevent access to restricted classes. A remote attacker could use this to create an untrusted Java applet or application that would bypass Java sandbox restrictions. (CVE-2012-1682) It was discovered that functionality in the AWT component in OpenJDK ...
+CVE-2012-0547 CVE-2012-1682
+
+USN-1552-1: OpenStack Keystone vulnerabilities - 3rd September 2012
+Dolph Mathews discovered that OpenStack Keystone did not properly restrict to administrative users the ability to update users' tenants. A remote attacker that can reach the administrative API can use this to add any user to any tenant. (CVE-2012-3542) Derek Higgins discovered that OpenStack Keystone did not properly implement token ...
+CVE-2012-3426 CVE-2012-3542
+
+USN-1551-1: Thunderbird vulnerabilities - 30th August 2012
+Gary Kwong, Christian Holler, Jesse Ruderman, Steve Fink, Bob Clary, Andrew Sutherland, Jason Smith, John Schoenick, Vladimir Vukicevic and Daniel Holbert discovered memory safety issues affecting Thunderbird. If the user were tricked into opening a specially crafted E-Mail, an attacker could exploit these to cause a denial of service via ...
+CVE-2012-1956 CVE-2012-1970 CVE-2012-1971 CVE-2012-1972 CVE-2012-1973 CVE-2012-1974 CVE-2012-1975 CVE-2012-1976 CVE-2012-3956 CVE-2012-3957 CVE-2012-3958 CVE-2012-3959 CVE-2012-3960 CVE-2012-3961 CVE-2012-3962 CVE-2012-3963 CVE-2012-3964 CVE-2012-3966 CVE-2012-3967 CVE-2012-3968 CVE-2012-3969 CVE-2012-3970 CVE-2012-3971 CVE-2012-3972 CVE-2012-3975 CVE-2012-3978 CVE-2012-3980 LP: 1042165
+
+USN-1548-1: Firefox vulnerabilities - 29th August 2012
+Gary Kwong, Christian Holler, Jesse Ruderman, Steve Fink, Bob Clary, Andrew Sutherland, Jason Smith, John Schoenick, Vladimir Vukicevic and Daniel Holbert discovered memory safety issues affecting Firefox. If the user were tricked into opening a specially crafted page, an attacker could exploit these to cause a denial of service via ...
+CVE-2012-1956 CVE-2012-1970 CVE-2012-1971 CVE-2012-1972 CVE-2012-1973 CVE-2012-1974 CVE-2012-1975 CVE-2012-1976 CVE-2012-3956 CVE-2012-3957 CVE-2012-3958 CVE-2012-3959 CVE-2012-3960 CVE-2012-3961 CVE-2012-3962 CVE-2012-3963 CVE-2012-3964 CVE-2012-3965 CVE-2012-3966 CVE-2012-3967 CVE-2012-3968 CVE-2012-3969 CVE-2012-3970 CVE-2012-3971 CVE-2012-3972 CVE-2012-3973 CVE-2012-3975 CVE-2012-3976 CVE-2012-3978 CVE-2012-3980 LP: 1041620
+
+USN-1546-1: libgc vulnerability - 28th August 2012
+It was discovered that multiple integer overflows existed in the malloc and calloc implementations in the Boehm-Demers-Weiser garbage collecting memory allocator (libgc). These could allow an attacker to cause a denial of service or possibly execute arbitrary code.
+CVE-2012-2673
+
+USN-1545-1: Nova vulnerability - 22nd August 2012
+Padraig Brady discovered that the fix for CVE-2012-3361 was incomplete and an authenticated user could still corrupt arbitrary files on the host running Nova. A remote attacker could use this to cause a denial of service or possibly gain privileges.
+CVE-2012-3447
+
+USN-1544-1: ImageMagick vulnerability - 22nd August 2012
+Tom Lane discovered that ImageMagick would not always properly allocate memory. If a user or automated system using ImageMagick were tricked into opening a specially crafted PNG image, an attacker could exploit this to cause a denial of service or possibly execute code with the privileges of the user invoking ...
+CVE-2012-3437
+
+USN-1540-2: NSS vulnerability - 21st August 2012
+
+USN-1540-1 fixed vulnerabilities in NSS. This update provides the corresponding updates for Ubuntu 12.04 LTS. Original advisory details: Kaspar Brand discovered a vulnerability in how the Network Security Services (NSS) ASN.1 decoder handles zero length items. If the user were tricked into opening a specially crafted certificate, an attacker could ...
+CVE-2012-0441
+
+USN-1542-1: PostgreSQL vulnerabilities - 20th August 2012
+Peter Eisentraut discovered that the XSLT functionality in the optional XML2 extension would allow unprivileged database users to both read and write data with the privileges of the database server. (CVE-2012-3488) Noah Misch and Tom Lane discovered that the XML functionality in the optional XML2 extension would allow unprivileged database ...
+CVE-2012-3488 CVE-2012-3489
+
+USN-1543-1: Config-IniFiles vulnerability - 20th August 2012
+It was discovered that the perl Config::IniFiles module created temporary files in an unsafe manner. A local user with write access to the directory containing a configuration file that Config-IniFiles manipulates could exploit this to overwrite arbitrary files.
+CVE-2012-2451
+
+USN-1482-3: ClamAV regression - 16th August 2012
+
+USN-1482-1 fixed vulnerabilities in ClamAV. The updated package could fail to properly scan files in some situations. This update fixes the problem. We apologize for the inconvenience. Original advisory details: It was discovered that ClamAV incorrectly handled certain malformed TAR archives. A remote attacker could create a specially-crafted TAR file ...
+LP: 1015405
+
+USN-1541-1: libotr vulnerability - 16th August 2012
+Justin Ferguson discovered multiple heap overflows in libotr. A remote attacker could use this to craft a malformed OTR message that could cause a denial of service via application crash or possibly execute arbitrary code.
+CVE-2012-3461
+
+USN-1536-1: LibreOffice vulnerability - 13th August 2012
+It was discovered that LibreOffice incorrectly handled certain encryption tags in Open Document Text (.odt) files. If a user were tricked into opening a specially crafted file, an attacker could cause LibreOffice to crash or possibly execute arbitrary code with the privileges of the user invoking the program.
+CVE-2012-2665
+
+USN-1529-1: Linux kernel vulnerabilities - 10th August 2012
+A flaw was discovered in the Linux kernel's macvtap device driver, which is used in KVM (Kernel-based Virtual Machine) to create a network bridge between host and guest. A privleged user in a guest could exploit this flaw to crash the host, if the vhost_net module is loaded with the ...
+CVE-2012-2119 CVE-2012-2136 CVE-2012-2137 CVE-2012-2372 CVE-2012-2373 CVE-2012-2669 CVE-2012-3364 CVE-2012-3375 CVE-2012-3400 CVE-2012-3511
+
+USN-1514-1: Linux kernel (OMAP4) vulnerabilities - 10th August 2012
+A flaw was discovered in the Linux kernel's macvtap device driver, which is used in KVM (Kernel-based Virtual Machine) to create a network bridge between host and guest. A privleged user in a guest could exploit this flaw to crash the host, if the vhost_net module is loaded with the ...
+CVE-2012-2119 CVE-2012-2136 CVE-2012-2137 CVE-2012-2372 CVE-2012-2373 CVE-2012-2669 CVE-2012-3364 CVE-2012-3375 CVE-2012-3400 CVE-2012-3511
+
+USN-1527-1: Expat vulnerabilities - 9th August 2012
+It was discovered that Expat computed hash values without restricting the ability to trigger hash collisions predictably. If a user or application linked against Expat were tricked into opening a crafted XML file, an attacker could cause a denial of service by consuming excessive CPU resources. (CVE-2012-0876) Tim Boddy discovered ...
+CVE-2012-0876 CVE-2012-1148
+
+USN-1525-1: Calligra vulnerability - 9th August 2012
+It was discovered that Calligra incorrectly handled certain malformed MS Word documents. If a user or automated system were tricked into opening a crafted MS Word file, an attacker could cause a denial of service or execute arbitrary code with privileges of the user invoking the program.
+CVE-2012-3456
+
+USN-1524-1: WebKit vulnerabilities - 8th August 2012
+A large number of security issues were discovered in the WebKit browser and JavaScript engines. If a user were tricked into viewing a malicious website, a remote attacker could exploit a variety of issues related to web browser security, including cross-site scripting attacks, denial of service attacks, and arbitrary code ...
+CVE-2011-3046 CVE-2011-3050 CVE-2011-3067 CVE-2011-3068 CVE-2011-3069 CVE-2011-3071 CVE-2011-3073 CVE-2011-3074 CVE-2011-3075 CVE-2011-3078 CVE-2012-0672 CVE-2012-3615 CVE-2012-3655 CVE-2012-3656 CVE-2012-3680 LP: 1027283
+
+USN-1523-1: NVIDIA graphics drivers vulnerability - 6th August 2012
+It was discovered that the NVIDIA graphics drivers could be reconfigured to gain access to arbitrary system memory. A local attacker could use this issue to gain root privileges.
+LP: 1033452
+
+USN-1522-1: QEMU vulnerability - 2nd August 2012
+It was discovered that QEMU incorrectly handled temporary files when creating a snapshot. A local attacker could use this flaw to possibly overwrite files with root privilege, or obtain sensitive information from the guest.
+CVE-2012-2652
+
+USN-1521-1: IcedTea-Web vulnerabilities - 31st July 2012
+Chamal De Silva discovered that the IcedTea-Web Java web browser plugin could dereference an uninitialized pointer. A remote attacker could use this to craft a malicious web page that could cause a denial of service by crashing the web browser or possibly execute arbitrary code. (CVE-2012-3422) Steven Bergom and others ...
+CVE-2012-3422 CVE-2012-3423
+
+USN-1520-1: Kerberos vulnerabilities - 31st July 2012
+Emmanuel Bouillon discovered that the MIT krb5 Key Distribution Center (KDC) daemon could free an uninitialized pointer when handling a malformed AS-REQ message. A remote unauthenticated attacker could use this to cause a denial of service or possibly execute arbitrary code. (CVE-2012-1015) Emmanuel Bouillon discovered that the MIT krb5 Key ...
+CVE-2012-1012 CVE-2012-1013 CVE-2012-1014 CVE-2012-1015
+
+USN-1519-1: DHCP vulnerabilities - 26th July 2012
+Markus Hietava discovered that the DHCP server incorrectly handled certain malformed client identifiers. A remote attacker could use this issue to cause DHCP to crash, resulting in a denial of service. (CVE-2012-3571) Glen Eustace discovered that the DHCP server incorrectly handled memory. A remote attacker could use this issue to ...
+CVE-2012-3571 CVE-2012-3954
+
+USN-1518-1: Bind vulnerability - 26th July 2012
+Einar Lonn discovered that Bind incorrectly initialized the failing-query cache. A remote attacker could use this flaw to cause Bind to crash, resulting in a denial of service.
+CVE-2012-3817
+
+USN-1517-1: Mono vulnerabilities - 25th July 2012
+It was discovered that the Mono System.Web library incorrectly filtered certain error messages related to forbidden files. If a user were tricked into opening a specially crafted URL, an attacker could possibly exploit this to conduct cross-site scripting (XSS) attacks. (CVE-2012-3382) It was discovered that the Mono System.Web library incorrectly ...
+CVE-2010-4159 CVE-2012-3382
+
+USN-1516-1: OpenSSL vulnerability - 25th July 2012
+It was discovered that OpenSSL incorrectly handled the SSL_OP_ALL setting. This resulted in TLS 1.1 and TLS 1.2 being inadvertently disabled for certain server and client applications.
+LP: 1018998
+
+USN-1515-1: Linux kernel vulnerability - 23rd July 2012
+An error was discovered in the Linux kernel's memory subsystem (hugetlb). An unprivileged local user could exploit this flaw to cause a denial of service (crash the system).
+CVE-2012-2390
+
+USN-1513-1: libexif vulnerabilities - 23rd July 2012
+Mateusz Jurczyk discovered that libexif incorrectly parsed certain malformed EXIF tags. If a user or automated system were tricked into processing a specially crafted image file, an attacker could cause libexif to crash, leading to a denial of service, or possibly obtain sensitive information. (CVE-2012-2812, CVE-2012-2813) Mateusz Jurczyk discovered that ...
+CVE-2012-2812 CVE-2012-2813 CVE-2012-2814 CVE-2012-2836 CVE-2012-2837 CVE-2012-2840 CVE-2012-2841
+
+USN-1512-1: KDE PIM vulnerability - 19th July 2012
+It was discovered that KDE PIM html renderer incorrectly enabled JavaScript, Java and Plugins. A remote attacker could use this flaw to send an email with embedded JavaScript that possibly executes when opened.
+CVE-2012-3413
+
+USN-1511-1: tiff vulnerability - 19th July 2012
+Huzaifa Sidhpurwala discovered that the tiff2pdf utility incorrectly handled certain malformed TIFF images. If a user or automated system were tricked into opening a specially crafted TIFF image, a remote attacker could crash the application, leading to a denial of service, or possibly execute arbitrary code with user privileges.
+CVE-2012-3401
+
+USN-1509-2: ubufox update - 17th July 2012
+
+USN-1509-1 fixed vulnerabilities in Firefox. This update provides an updated ubufox package for use with the lastest Firefox. Original advisory details: Benoit Jacob, Jesse Ruderman, Christian Holler, Bill McCloskey, Brian Smith, Gary Kwong, Christoph Diehl, Chris Jones, Brad Lassey, and Kyle Huey discovered memory safety issues affecting Firefox. If the ...
+LP: 1024562
+
+USN-1510-1: Thunderbird vulnerabilities - 17th July 2012
+Benoit Jacob, Jesse Ruderman, Christian Holler, Bill McCloskey, Brian Smith, Gary Kwong, Christoph Diehl, Chris Jones, Brad Lassey, and Kyle Huey discovered memory safety issues affecting Thunderbird. If the user were tricked into opening a specially crafted page, an attacker could possibly exploit these to cause a denial of service ...
+CVE-2012-1948 CVE-2012-1949 CVE-2012-1951 CVE-2012-1952 CVE-2012-1953 CVE-2012-1954 CVE-2012-1955 CVE-2012-1957 CVE-2012-1958 CVE-2012-1959 CVE-2012-1960 CVE-2012-1961 CVE-2012-1962 CVE-2012-1963 CVE-2012-1967 LP: 1020198 LP: 1024564
+
+USN-1509-1: Firefox vulnerabilities - 17th July 2012
+Benoit Jacob, Jesse Ruderman, Christian Holler, Bill McCloskey, Brian Smith, Gary Kwong, Christoph Diehl, Chris Jones, Brad Lassey, and Kyle Huey discovered memory safety issues affecting Firefox. If the user were tricked into opening a specially crafted page, an attacker could possibly exploit these to cause a denial of service ...
+CVE-2012-1948 CVE-2012-1949 CVE-2012-1950 CVE-2012-1951 CVE-2012-1952 CVE-2012-1953 CVE-2012-1954 CVE-2012-1955 CVE-2012-1957 CVE-2012-1958 CVE-2012-1959 CVE-2012-1960 CVE-2012-1961 CVE-2012-1962 CVE-2012-1963 CVE-2012-1964 CVE-2012-1965 CVE-2012-1966 CVE-2012-1967 LP: 1020198 LP: 1024562
+
+USN-1508-1: Linux kernel (OMAP4) vulnerability - 16th July 2012
+An error was discovered in the Linux kernel's memory subsystem (hugetlb). An unprivileged local user could exploit this flaw to cause a denial of service (crash the system).
+CVE-2012-2390
+
+USN-1505-1: OpenJDK 6 vulnerabilities - 12th July 2012
+It was discovered that multiple flaws existed in the CORBA (Common Object Request Broker Architecture) implementation in OpenJDK. An attacker could create a Java application or applet that used these flaws to bypass Java sandbox restrictions or modify immutable object data. (CVE-2012-1711, CVE-2012-1719) It was discovered that multiple flaws existed ...
+CVE-2012-1711 CVE-2012-1713 CVE-2012-1716 CVE-2012-1717 CVE-2012-1718 CVE-2012-1719 CVE-2012-1723 CVE-2012-1724 CVE-2012-1725
+
+USN-1506-1: Puppet vulnerabilities - 12th July 2012
+It was discovered that Puppet incorrectly handled certain HTTP GET requests. An attacker could use this flaw with a valid client certificate to retrieve arbitrary files from the Puppet master. (CVE-2012-3864) It was discovered that Puppet incorrectly handled Delete requests. If a Puppet master were reconfigured to allow the "Delete" ...
+CVE-2012-3864 CVE-2012-3865 CVE-2012-3866 CVE-2012-3867
+
+USN-1503-1: Rhythmbox vulnerability - 11th July 2012
+Hans Spaans discovered that the Context plugin in Rhythmbox created a temporary directory in an insecure manner. A local attacker could exploit this to execute arbitrary code as the user invoking the program. The Context plugin is disabled by default in Ubuntu.
+CVE-2012-3355
+
+USN-1501-1: Nova vulnerability - 11th July 2012
+Dan Prince discovered that the Nova scheduler, when using DifferentHostFilter or SameHostFilter, would make repeated database instance lookup calls based on passed scheduler hints. An authenticated attacker could use this to cause a denial of service.
+CVE-2012-3371
+
+USN-1502-1: X.Org X Server vulnerability - 11th July 2012
+Ken Mixter discovered a format string vulnerability in the LogVHdrMessageVerb function when handling input device names. This could allow a local attacker to cause a denial of service or possibly execute arbitrary code. The default compiler options for the affected release should reduce the vulnerability to a denial of service.
+CVE-2012-2118
+
+USN-1500-1: Pidgin vulnerabilities - 9th July 2012
+Evgeny Boger discovered that Pidgin incorrectly handled buddy list messages in the AIM and ICQ protocol handlers. A remote attacker could send a specially crafted message and cause Pidgin to crash, leading to a denial of service. This issue only affected Ubuntu 10.04 LTS, 11.04 and 11.10. (CVE-2011-4601) Thijs Alkemade ...
+CVE-2011-4601 CVE-2011-4602 CVE-2011-4603 CVE-2011-4922 CVE-2011-4939 CVE-2012-1178 CVE-2012-2214 CVE-2012-2318 CVE-2012-3374
+
+USN-1498-1: tiff vulnerabilities - 5th July 2012
+It was discovered that the TIFF library incorrectly handled certain malformed TIFF images. If a user or automated system were tricked into opening a specially crafted TIFF image, a remote attacker could crash the application, leading to a denial of service, or possibly execute arbitrary code with user privileges. (CVE-2012-2088) ...
+CVE-2012-2088 CVE-2012-2113
+
+USN-1497-1: Nova vulnerabilities - 3rd July 2012
+Matthias Weckbecker discovered that, when using the OpenStack API to setup libvirt-based hypervisors, an authenticated user could inject files in arbitrary locations on the file system of the host running Nova. A remote attacker could use this to gain root privileges. This issue only affects Ubuntu 12.04 LTS. (CVE-2012-3360) Pádraig ...
+CVE-2012-3360 CVE-2012-3361
+
+USN-1494-1: Linux kernel (OMAP4) vulnerability - 2nd July 2012
+A flaw was discovered in the Linux kernel's NFSv4 (Network file system) handling of ACLs (access control lists). A remote NFS server (attacker) could cause a denial of service (OOPS).
+CVE-2012-2375
+
+USN-1486-1: Linux kernel vulnerability - 29th June 2012
+A flaw was discovered in the Linux kernel's NFSv4 (Network file system) handling of ACLs (access control lists). A remote NFS server (attacker) could cause a denial of service (OOPS).
+CVE-2012-2375
+
+USN-1484-1: PyCrypto vulnerability - 28th June 2012
+It was discovered that PyCrypto produced inappropriate prime numbers when generating ElGamal keys. An attacker could use this flaw to facilitate brute-forcing of ElGamal encryption keys.
+CVE-2012-2417
+
+USN-1485-1: AccountsService vulnerability - 28th June 2012
+Florian Weimer discovered that AccountsService incorrectly handled privileges when copying certain files to the system cache directory. A local attacker could exploit this issue to read arbitrary files, bypassing intended permissions.
+CVE-2012-2737
+
+USN-1463-4: Thunderbird vulnerabilities - 21st June 2012
+
+USN-1463-1 fixed vulnerabilities in Firefox. This update provides the corresponding fixes for Thunderbird. Original advisory details: Jesse Ruderman, Igor Bukanov, Bill McCloskey, Christian Holler, Andrew McCreight, Olli Pettay, Boris Zbarsky, and Brian Bondy discovered memory safety issues affecting Firefox. If the user were tricked into opening a specially crafted page, ...
+CVE-2011-3101 CVE-2012-0441 CVE-2012-1937 CVE-2012-1938 CVE-2012-1940 CVE-2012-1941 CVE-2012-1944 CVE-2012-1945 CVE-2012-1946 CVE-2012-1947 LP: 1007556
+
+USN-1463-3: Firefox regressions - 20th June 2012
+
+USN-1463-1 fixed vulnerabilities in Firefox. The new package caused a regression in the rendering of Hebrew text and the ability of the Hotmail inbox to auto-update. This update fixes the problem. Original advisory details: Jesse Ruderman, Igor Bukanov, Bill McCloskey, Christian Holler, Andrew McCreight, Olli Pettay, Boris Zbarsky, and Brian ...
+LP: 1013425
+
+USN-1482-2: ClamAV regression - 19th June 2012
+
+USN-1482-1 fixed vulnerabilities in ClamAV. The updated packages could fail to install in certain situations. This update fixes the problem. We apologize for the inconvenience. Original advisory details: It was discovered that ClamAV incorrectly handled certain malformed TAR archives. A remote attacker could create a specially-crafted TAR file containing malware ...
+LP: 1015337
+
+USN-1482-1: ClamAV vulnerabilities - 19th June 2012
+It was discovered that ClamAV incorrectly handled certain malformed TAR archives. A remote attacker could create a specially-crafted TAR file containing malware that could escape being detected. (CVE-2012-1457, CVE-2012-1459) It was discovered that ClamAV incorrectly handled certain malformed CHM files. A remote attacker could create a specially-crafted CHM file containing ...
+CVE-2012-1457 CVE-2012-1458 CVE-2012-1459
+
+USN-1481-1: PHP vulnerabilities - 19th June 2012
+It was discovered that PHP incorrectly handled certain Tidy::diagnose operations on invalid objects. A remote attacker could use this flaw to cause PHP to crash, leading to a denial of service. (CVE-2012-0781) It was discovered that PHP incorrectly handled certain multi-file upload filenames. A remote attacker could use this flaw ...
+CVE-2012-0781 CVE-2012-1172 CVE-2012-2143 CVE-2012-2317 CVE-2012-2335 CVE-2012-2336 CVE-2012-2386
+
+USN-1480-1: Raptor vulnerability - 18th June 2012
+Timothy D. Morgan discovered that Raptor would unconditionally load XML external entities. If a user were tricked into opening a specially crafted document in an application linked against Raptor, an attacker could possibly obtain access to arbitrary files on the user's system or potentially execute arbitrary code with the privileges ...
+CVE-2012-0037
+
+USN-1478-1: Libav vulnerabilities - 18th June 2012
+Mateusz Jurczyk and Gynvael Coldwind discovered that Libav incorrectly handled certain malformed DV files. If a user were tricked into opening a crafted DV file, an attacker could cause a denial of service via application crash, or possibly execute arbitrary code with the privileges of the user invoking the program. ...
+CVE-2011-3929 CVE-2011-3936 CVE-2011-3940 CVE-2011-3945 CVE-2011-3947 CVE-2011-3951 CVE-2011-3952 CVE-2011-4031 CVE-2012-0848 CVE-2012-0850 CVE-2012-0851 CVE-2012-0852 CVE-2012-0853 CVE-2012-0858 CVE-2012-0859 CVE-2012-0947
+
+USN-1477-1: APT vulnerability - 15th June 2012
+Georgi Guninski discovered that APT did not properly validate imported keyrings via apt-key net-update. USN-1475-1 added additional verification for imported keyrings, but it was insufficient. If a remote attacker were able to perform a man-in-the-middle attack, this flaw could potentially be used to install altered packages. This update corrects the ...
+CVE-2012-0954
+
+USN-1463-2: Unity 2D update - 15th June 2012
+
+USN-1463-1 fixed vulnerabilities in Firefox. The Firefox update exposed a bug in Unity 2D which resulted in Firefox being unable to obtain pointer grabs in order to open popup menus. This update fixes the problem.
+LP: 1010466
+
+USN-1475-1: APT update - 14th June 2012
+Georgi Guninski discovered that APT relied on GnuPG argument order and did not check GPG subkeys when validating imported keyrings via apt-key net-update. While it appears that a man-in-the-middle attacker cannot exploit this, as a hardening measure this update adjusts apt-key to validate all subkeys when checking for key collisions.
+LP: 1013128
+
+USN-1474-1: Linux kernel (OMAP4) vulnerabilities - 13th June 2012
+A flaw was discovered in the Linux kernel's KVM (kernel virtual machine). An administrative user in the guest OS could leverage this flaw to cause a denial of service in the host OS. (CVE-2012-2121) Schacher Raindel discovered a flaw in the Linux kernel's memory handling when hugetlb is enabled. An ...
+CVE-2012-2121 CVE-2012-2133 CVE-2012-2313 CVE-2012-2319 CVE-2012-2383 CVE-2012-2384
+
+USN-1473-1: Linux kernel vulnerabilities - 13th June 2012
+A flaw was discovered in the Linux kernel's KVM (kernel virtual machine). An administrative user in the guest OS could leverage this flaw to cause a denial of service in the host OS. (CVE-2012-2121) Schacher Raindel discovered a flaw in the Linux kernel's memory handling when hugetlb is enabled. An ...
+CVE-2012-2121 CVE-2012-2133 CVE-2012-2313 CVE-2012-2319 CVE-2012-2383 CVE-2012-2384
+
+USN-1466-2: Nova regression - 12th June 2012
+
+USN 1466-1 fixed a vulnerability in Nova. The upstream patch introduced a regression when a security group granted full access and therefore the network protocol was left unset, causing an error in processing. This update fixes the issue. We apologize for the inconvenience. Original advisory details: It was discovered that, ...
+https://bugs.launchpad.net/bugs/1010514
+
+USN-1430-4: AppArmor update - 12th June 2012
+
+USN-1430-1 fixed vulnerabilities in Firefox and USN-1430-3 fixed vulnerabilities in Thunderbird. This update provides an AppArmor package with updated abstractions for use with the latest Firefox and Thunderbird.
+LP: 989184 LP: 990931 http://www.ubuntu.com/usn/usn-1430-3
+
+USN-1467-1: MySQL vulnerabilities - 11th June 2012
+It was discovered that certain builds of MySQL incorrectly handled password authentication on certain platforms. A remote attacker could use this issue to authenticate with an arbitrary password and establish a connection. (CVE-2012-2122) MySQL has been updated to 5.5.24 in Ubuntu 12.04 LTS. Ubuntu 10.04 LTS, Ubuntu 11.04 and Ubuntu ...
+CVE-2012-2122
+
+USN-1466-1: Nova vulnerability - 6th June 2012
+It was discovered that, when defining security groups in Nova using the EC2 or OS APIs, specifying the network protocol (e.g. 'TCP') in the incorrect case would cause the security group to not be applied correctly. An attacker could use this to bypass Nova security group restrictions.
+CVE-2012-2654
+
+USN-1463-1: Firefox vulnerabilities - 6th June 2012
+Jesse Ruderman, Igor Bukanov, Bill McCloskey, Christian Holler, Andrew McCreight, Olli Pettay, Boris Zbarsky, and Brian Bondy discovered memory safety issues affecting Firefox. If the user were tricked into opening a specially crafted page, an attacker could possibly exploit these to cause a denial of service via application crash, or ...
+CVE-2011-3101 CVE-2012-0441 CVE-2012-1937 CVE-2012-1938 CVE-2012-1940 CVE-2012-1941 CVE-2012-1944 CVE-2012-1945 CVE-2012-1946 CVE-2012-1947 LP: 1007495
+
+USN-1465-2: Ubuntu One storage protocol update - 6th June 2012
+
+USN-1465-1 fixed a vulnerability in the Ubuntu One Client. This update adds a required fix to the Ubuntu One storage protocol library. Original advisory details: It was discovered that the Ubuntu One Client incorrectly validated server certificates when using HTTPS connections. If a remote attacker were able to perform a ...
+CVE-2011-4409
+
+USN-1465-1: Ubuntu One Client vulnerability - 6th June 2012
+It was discovered that the Ubuntu One Client incorrectly validated server certificates when using HTTPS connections. If a remote attacker were able to perform a man-in-the-middle attack, this flaw could be exploited to alter or compromise confidential information.
+CVE-2011-4409
+
+USN-1462-1: Bind vulnerabilities - 5th June 2012
+Dan Luther discovered that Bind incorrectly handled zero length rdata fields. A remote attacker could use this flaw to cause Bind to crash or behave erratically, resulting in a denial of service. (CVE-2012-1667) It was discovered that Bind incorrectly handled revoked domain names. A remote attacker could use this flaw ...
+CVE-2012-1033 CVE-2012-1667
+
+USN-1461-1: PostgreSQL vulnerabilities - 5th June 2012
+It was discovered that PostgreSQL incorrectly handled certain bytes passed to the crypt() function when using DES encryption. An attacker could use this flaw to incorrectly handle authentication. (CVE-2012-2143) It was discovered that PostgreSQL incorrectly handled SECURITY DEFINER and SET attributes on procedural call handlers. An attacker could use this ...
+CVE-2012-2143 CVE-2012-2655
+
+USN-1443-2: Update Manager vulnerability - 4th June 2012
+
+USN-1443-1 fixed vulnerabilities in Update Manager. The fix for CVE-2012-0949 was discovered to be incomplete. This update fixes the problem. Original advisory details: Felix Geyer discovered that the Update Manager Apport hook incorrectly uploaded certain system state archive files to Launchpad when reporting bugs. This could possibly result in repository ...
+CVE-2012-0950
+
+USN-1460-1: Linux kernel (OMAP4) vulnerabilities - 31st May 2012
+A flaw was found in the Linux kernel's KVM (Kernel Virtual Machine) virtual cpu setup. An unprivileged local user could exploit this flaw to crash the system leading to a denial of service. (CVE-2012-1601) Steve Grubb reported a flaw with Linux fscaps (file system base capabilities) when used to increase ...
+CVE-2012-1601 CVE-2012-2123 CVE-2012-2745
+
+USN-1456-1: Nut vulnerability - 31st May 2012
+Sebastian Pohle discovered that Nut did not properly validate its input when receiving data over the network. If upsd was configured to allow connections over the network, a remote attacker could exploit this to cause a denial of service (application crash).
+CVE-2012-2944
+
+USN-1451-1: OpenSSL vulnerabilities - 24th May 2012
+Ivan Nestlerode discovered that the Cryptographic Message Syntax (CMS) and PKCS #7 implementations in OpenSSL returned early if RSA decryption failed. This could allow an attacker to expose sensitive information via a Million Message Attack (MMA). (CVE-2012-0884) It was discovered that an integer underflow was possible when using TLS 1.1, ...
+CVE-2012-0884 CVE-2012-2333
+
+USN-1450-1: Net-SNMP vulnerability - 23rd May 2012
+It was discovered that Net-SNMP incorrectly performed entry lookups in the extension table. A remote attacker could send a specially crafted request and cause the SNMP server to crash, leading to a denial of service.
+CVE-2012-2141
+
+USN-1449-1: feedparser vulnerability - 22nd May 2012
+It was discovered that feedparser did not properly sanitize ENTITY declarations in encoded fields. A remote attacker could exploit this to cause a denial of service via memory exhaustion.
+CVE-2012-2921
+
+USN-1448-1: Linux kernel vulnerabilities - 21st May 2012
+A flaw was found in the Linux kernel's KVM (Kernel Virtual Machine) virtual cpu setup. An unprivileged local user could exploit this flaw to crash the system leading to a denial of service. (CVE-2012-1601) Steve Grubb reported a flaw with Linux fscaps (file system base capabilities) when used to increase ...
+CVE-2012-1601 CVE-2012-2123 CVE-2012-2745
+
+USN-1447-1: libxml2 vulnerability - 21st May 2012
+Juri Aedla discovered that libxml2 contained an off by one error in its XPointer functionality. If a user or application linked against libxml2 were tricked into opening a specially crafted XML file, an attacker could cause the application to crash or possibly execute arbitrary code with the privileges of the ...
+CVE-2011-3102
+
+USN-1444-1: BackupPC vulnerability - 17th May 2012
+It was discovered that BackupPC did not properly sanitize its input when processing RestoreFile error messages, resulting in a cross-site scripting (XSS) vulnerability. With cross-site scripting vulnerabilities, if a user were tricked into viewing server output during a crafted server request, a remote attacker could exploit this to modify the ...
+CVE-2011-5081
+
+USN-1443-1: Update Manager vulnerabilities - 17th May 2012
+It was discovered that Update Manager created system state archive files with incorrect permissions when upgrading releases. A local user could possibly use this to read repository credentials. (CVE-2012-0948) Felix Geyer discovered that the Update Manager Apport hook incorrectly uploaded certain system state archive files to Launchpad when reporting bugs. ...
+CVE-2012-0948 CVE-2012-0949
+
+USN-1442-1: Sudo vulnerability - 16th May 2012
+It was discovered that sudo incorrectly handled network masks when using Host and Host_List. A local user who is listed in sudoers may be allowed to run commands on unintended hosts when IPv4 network masks are used to grant access. A local attacker could exploit this to bypass intended access ...
+CVE-2012-2337
+
+USN-1441-1: Quagga vulnerabilities - 15th May 2012
+It was discovered that Quagga incorrectly handled Link State Update messages with invalid lengths. A remote attacker could use this flaw to cause Quagga to crash, resulting in a denial of service. (CVE-2012-0249, CVE-2012-0250) It was discovered that Quagga incorrectly handled messages with a malformed Four-octet AS Number Capability. A ...
+CVE-2012-0249 CVE-2012-0250 CVE-2012-0255
+
+USN-1439-1: Horizon vulnerabilities - 7th May 2012
+Matthias Weckbecker discovered a cross-site scripting (XSS) vulnerability in Horizon via the log viewer refrash mechanism. If a user were tricked into viewing a specially crafted log message, a remote attacker could exploit this to modify the contents or steal confidential data within the same domain. (CVE-2012-2094) Thomas Biege discovered ...
+CVE-2012-2094 CVE-2012-2144
+
+USN-1437-1: PHP vulnerability - 4th May 2012
+It was discovered that PHP, when used as a stand alone CGI processor for the Apache Web Server, did not properly parse and filter query strings. This could allow a remote attacker to execute arbitrary code running with the privilege of the web server. Configurations using mod_php5 and FastCGI were ...
+CVE-2012-1823 CVE-2012-2311
+
+USN-1430-3: Thunderbird vulnerabilities - 4th May 2012
+
+USN-1430-1 fixed vulnerabilities in Firefox. This update provides the corresponding fixes for Thunderbird. Original advisory details: Bob Clary, Christian Holler, Brian Hackett, Bobby Holley, Gary Kwong, Hilary Hall, Honza Bambas, Jesse Ruderman, Julian Seward, and Olli Pettay discovered memory safety issues affecting Firefox. If the user were tricked into opening ...
+CVE-2011-1187 CVE-2011-3062 CVE-2012-0467 CVE-2012-0468 CVE-2012-0469 CVE-2012-0470 CVE-2012-0471 CVE-2012-0473 CVE-2012-0474 CVE-2012-0475 CVE-2012-0477 CVE-2012-0478 CVE-2012-0479 LP: 987305
+
+USN-1438-1: Nova vulnerability - 3rd May 2012
+Dan Prince discovered that Nova did not enforce quotas for security groups and rules added to security groups. An authenticated user could exploit this to cause a denial of service.
+CVE-2012-2101
+
+USN-1436-1: Libtasn1 vulnerability - 2nd May 2012
+Matthew Hall discovered that Libtasn incorrectly handled certain large values. An attacker could exploit this with a specially crafted ASN.1 structure and cause a denial of service, or possibly execute arbitrary code.
+CVE-2012-1569
+
+USN-1435-1: ImageMagick vulnerabilities - 1st May 2012
+Joonas Kuorilehto and Aleksis Kauppinen discovered that ImageMagick incorrectly handled certain ResolutionUnit tags. If a user or automated system using ImageMagick were tricked into opening a specially crafted image, an attacker could exploit this to cause a denial of service or possibly execute code with the privileges of the user ...
+CVE-2012-0247 CVE-2012-0248 CVE-2012-0259 CVE-2012-1185 CVE-2012-1186 CVE-2012-1610 CVE-2012-1798
+
+USN-1434-1: Samba vulnerability - 1st May 2012
+Ivano Cristofolini discovered that Samba incorrectly handled some Local Security Authority (LSA) remote procedure calls (RPC). A remote, authenticated attacker could exploit this to grant administrative privileges to arbitrary users. The administrative privileges could be used to bypass permission checks performed by the Samba server.
+CVE-2012-2111
+
+USN-1430-1: Firefox vulnerabilities - 27th April 2012
+Bob Clary, Christian Holler, Brian Hackett, Bobby Holley, Gary Kwong, Hilary Hall, Honza Bambas, Jesse Ruderman, Julian Seward, and Olli Pettay discovered memory safety issues affecting Firefox. If the user were tricked into opening a specially crafted page, an attacker could exploit these to cause a denial of service via ...
+CVE-2011-1187 CVE-2011-3062 CVE-2012-0467 CVE-2012-0468 CVE-2012-0469 CVE-2012-0470 CVE-2012-0471 CVE-2012-0473 CVE-2012-0474 CVE-2012-0475 CVE-2012-0477 CVE-2012-0478 CVE-2012-0479 LP: 987262
