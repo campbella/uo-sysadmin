@@ -164,7 +164,97 @@ PID USER      PR  NI  VIRT  RES  SHR S %CPU %MEM    TIME+  COMMAND
  
 1007 root      20   0     0    0    0 S    0  0.0   0:00.00 flush-252:2                                                                                        
  
-1123 ashley    20   0  9184 6084 1620 S    0  0.1   0:00.45 bash                                                                                               
- 1229 root      20   0     0    0    0 S    0  0.0   0:00.00 kworker/0:0                                                                                        
- 1230 ashley    20   0  2720 1072  860 R    0  0.0   0:00.00 top                                                                                                
+1123 ashley    20   0  9184 6084 1620 S    0  0.1   0:00.45 bash
+1229 root      20   0     0    0    0 S    0  0.0   0:00.00 kworker/0:0
+1230 ashley    20   0  2720 1072  860 R    0  0.0   0:00.00 top
 
+
+DESCRIPTION OF PROCESSES (Some not found): Note -- Good image for StartUp Process (http://www.ucblueash.edu/thomas/Intro_Unix_Text/Images/Unix_boot_diagram.png)
+
++top: provides an ongoing look at processor activity in real time. It displays a listing of the most CPU-intensive tasks on the system, and can provide an interactive interface for manipulating processes.
+
++bash:a command processor, typically run in a text window, allowing the user to type commands which cause actions.
+
++login: is ran by getty which waits for user input
+
++cron: a time-based job scheduler in Unix-like computer operating systems. People who set up and maintain software environments use cron to schedule jobs (commands or shell scripts) to run periodically at fixed times, dates, or intervals. It typically automates system maintenance or administration—though its general-purpose nature makes it useful for things like connecting to the Internet and downloading email at regular intervals.
+
++atd: run jobs queued for later execution
+
++irqbalance:  the Linux utility tasked with making sure that interrupts from your hardware devices are handled in as efficient a manner as possible
+
++acpod: daemon for delivering ACPI events. It listens on /proc/acpi/event and when an event occurs, executes programs to handle the event.
+
++whoopsie: the Ubuntu crash database submission daemon.
+
++getty: short for "get teletype", is a Unix program running on a host computer that manages physical or virtual terminals (TTYs). When it detects a connection, it prompts for a username and runs the 'login' program to authenticate the user. It is usually called by init.
+
++upstart-socket: queries  the Upstart init(8) daemon for all job configurations which start on or stop on the socket event. It  then waits  for  an incoming connection on each specified socket(7) and when detected emits the socket event (socket-event (7)), setting a number of environment variables for the job to query.
+
++rsyslogd:  an open source software utility used on UNIX and Unix-like computer systems for forwarding log messages in an IP network.
+
++dbus-daemon: the D-Bus message bus daemon
+
++sshd:the daemon program for ssh
+
++hd-audio0: a kernal thread relating to sound playback
+
++kpsmoused: Mouse query.
+
++udevd: serializer daemon and udev event sender
+
++upstart-udev-b:"helper" daemon
+
++mountall:  filesystem mounting tool.
+
++ext4-dio-unwrit:  workqueues that are created statically at mount time, one per cpu per file system. 
+
++jbd2/dm-0-8: used by JBD2 (the journal manager for ext4) to periodically flush journal commits and other changes to disk.
+
++kdmflush: Used by Device Mapper to process deferred work that it has queued up from other contexts where doing immediately so would be problematic.
+
++firewire: firewire driver
+
++charger_manager: enable/disable chargers attached to the battery
+
++binder: Binders turn functions/functors with two arguments into functors with a single argument, storing an argument to be applied later.
+
++scsi_eh: SCSI Error Handler.
+
++crypto: is a framework for drivers of cryptographic hardware to register with the kernel so “consumers” (other kernel subsystems, and users through the /dev/crypto device) are able to make use of it.
+
++fsnotify_mark: Thread that is just in the process of destroying some mark.
+
++khugepaged: will periodically check for large contiguous virtual memory blocks in a process and "collapse" them.
+
++ksmd: Merges memory pages between virtual hosts to save space.
+
++kswapd0: Responsible for the swap space management
+
++khugtakd: The loop of the khungtaskd daemon is a call to the scheduler for waking it up after ever 120 seconds (default value).
+
++md: The md driver provides support for memory backed virtual disks.
+
++khubd:  The khubd thread is responsible for configuring devices.
+
++kblockd: A kernel thread, essentially, it periodically activetes the block device drivers.
+
++sync_supers:The sync_supers kernel thread does a very simple thing: wake up every 5seconds, iterate over all superblocks in the system and flush dirty superblocks by calling their '->write_super()' method.
+
++init: In Unix-based computer operating systems, init (short for initialization) is the first process started during booting of the computer system. Init is a daemon process that continues running until the system is shut down. It is the direct or indirect ancestor of all other processes and automatically adopts all orphaned processes. Init is started by the kernel using a hard-coded filename, and if the kernel is unable to start it, a kernel panic will result. Init is typically assigned process identifier 1.
+
++kthreadd: [kthreadd] is the kernel thread daemon.  All kthreads are forked off this thread.  To demonstrate this fact, run a ps -ef.  The other kthreads on the server will have a PPID of [kthreadd] which is usually PPID 2. Creation of new kernel threads is done via kthreadd so that a clean environment is obtained even if this were to be invoked by userspace by way of modprobe, hotplug cpu, etc.
+
++ksoftirqd: Because the operating system cannot handle IRQs as they arrive (because they arrive too fast one after the other), the operating system queues them for later processing by a special internal process named ksoftirqd.                                                                           
+
++kworker: A placeholder process for kernel worker threads, which perform most of the actual processing for the kernel, especially in cases where there are interrupts, timers, I/O, etc. These typically correspond to the vast majority of any allocated "system" time to running processes.
+
++migration: Process migration is a specialized form of process management whereby processes are moved from one computing environment to another. The most common application of process migration is in computer clusters where processes are moved from machine to machine.
+
++watchdog: The Linux kernel can reset the system if serious problems are detected. This  can  be  implemented  via  special  watchdog  hardware,  or via a slightly less reliable software-only watchdog inside the kernel.
+
++cpuset: The  cpuset file system is a pseudo-file-system interface to the kernel cpuset mechanism, which is used to control the processor placement  and memory  placement of processes.  It is commonly mounted at /dev/cpuset.
+
++kdevtmpfs: Using devtmpfs will expose device nodes for the hard drives the kernel knows how to operate.
+
++netns: A network namespace is logically another copy of the network stack, with it's own routes, firewall rules, and network devices. By convention a named network namespace is an object at /var/run/netns/NAME that can be opened.  The file descriptor resulting from opening /var/run/netns/NAME refers to the specified network namespace.
