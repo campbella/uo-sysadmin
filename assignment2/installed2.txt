@@ -1,0 +1,91 @@
+﻿Start-Date: 2013-07-03  08:33:34
+Commandline: apt-get -o APT::Status-Fd=4 -o APT::Keep-Fds::=5 -o APT::Keep-Fds::=6 -q -y --no-remove insta$
+Install: lvm2:i386 (2.02.66-4ubuntu7.1), libdevmapper-event1.02.1:i386 (1.02.48-4ubuntu7.1, automatic), wa$
+End-Date: 2013-07-03  08:33:37
+
+Start-Date: 2013-07-03  08:33:44
+Commandline: apt-get -o APT::Status-Fd=4 -o APT::Keep-Fds::=5 -o APT::Keep-Fds::=6 -q -y --no-remove insta$
+Install: libnl-3-200:i386 (3.2.3-2ubuntu2, automatic), linux-generic-lts-quantal:i386 (3.5.0.23.30), linux$
+End-Date: 2013-07-03  08:34:17
+
+Start-Date: 2013-07-03  08:34:19
+Commandline: apt-get -o APT::Status-Fd=4 -o APT::Keep-Fds::=5 -o APT::Keep-Fds::=6 -q -y --no-remove insta$
+Install: libpci3:i386 (3.1.8-2ubuntu5, automatic), pciutils:i386 (3.1.8-2ubuntu5)
+End-Date: 2013-07-03  08:34:21
+
+Start-Date: 2013-07-03  08:34:22
+Commandline: apt-get -o APT::Status-Fd=4 -o APT::Keep-Fds::=5 -o APT::Keep-Fds::=6 -q -y --no-remove insta$
+Install: libusb-1.0-0:i386 (1.0.9~rc3-2ubuntu1, automatic), usbutils:i386 (005-1)
+End-Date: 2013-07-03  08:34:24
+
+Start-Date: 2013-07-03  08:34:38
+Commandline: apt-get -o APT::Status-Fd=4 -o APT::Keep-Fds::=5 -o APT::Keep-Fds::=6 -q -y install tasksel
+Install: libio-string-perl:i386 (1.08-2, automatic), xz-lzma:i386 (5.1.1alpha+20110809-3, automatic), pyth$
+End-Date: 2013-07-03  08:35:01
+
+Start-Date: 2013-07-03  08:35:05
+Commandline: apt-get -o APT::Status-Fd=4 -o APT::Keep-Fds::=5 -o APT::Keep-Fds::=6 -q -y --no-remove -o AP$
+Install: installation-report:i386 (2.46ubuntu1)
+End-Date: 2013-07-03  08:35:06
+
+Start-Date: 2013-07-03  08:38:24
+Commandline: apt-get -o APT::Status-Fd=4 -o APT::Keep-Fds::=5 -o APT::Keep-Fds::=6 -q -y install minimal^ $
+Install: popularity-contest:i386 (1.53ubuntu1), python-crypto:i386 (2.4.1-1ubuntu0.1), libkeyutils1:i386 ($
+End-Date: 2013-07-03  08:41:27
+
+Start-Date: 2013-07-03  08:41:40
+Commandline: apt-get -o APT::Status-Fd=4 -o APT::Keep-Fds::=5 -o APT::Keep-Fds::=6 -q -y --no-remove insta$
+Install: os-prober:i386 (1.51ubuntu3, automatic), libfreetype6:i386 (2.4.8-1ubuntu2.1, automatic), grub-co$
+End-Date: 2013-07-03  08:41:46
+
+Start-Date: 2013-07-03  08:41:49
+Commandline: apt-get -o APT::Status-Fd=4 -o APT::Keep-Fds::=5 -o APT::Keep-Fds::=6 -q -y --no-remove insta$
+Install: grub2-common:i386 (1.99-21ubuntu3.9, automatic), grub-pc:i386 (1.99-21ubuntu3.9), grub-gfxpayload$
+End-Date: 2013-07-03  08:41:55
+
+Start-Date: 2013-07-03  08:44:45
+Commandline: apt-get -o APT::Status-Fd=4 -o APT::Keep-Fds::=5 -o APT::Keep-Fds::=6 -q -y --no-remove insta$
+Install: libnss3:i386 (3.14.1-0ckbi1.93ubuntu.0.12.04.1, automatic), libcryptsetup4:i386 (1.4.1-2ubuntu4, $
+End-Date: 2013-07-03  08:45:08
+
+Commandline: apt-get install openssh-server
+Install: libwrap0:i386 (7.6.q-21, automatic), ssh-import-id:i386 (2.10-0ubuntu1, automatic), tcpd:i386 (7.$
+Upgrade: openssh-client:i386 (5.9p1-5ubuntu1, 5.9p1-5ubuntu1.1)
+End-Date: 2013-07-08  09:52:11
+
+Start-Date: 2013-07-15  08:13:36
+Commandline: apt-get remove --purge resolvconf
+Purge: ubuntu-minimal:i386 (1.267.1), resolvconf:i386 (1.63ubuntu16)
+End-Date: 2013-07-15  08:13:45
+
+Start-Date: 2013-07-15  08:59:41
+Commandline: apt-get install irb libopenssl-ruby libreadline-ruby rdoc ri ruby ruby-dev
+Install: ruby1.8-dev:i386 (1.8.7.352-2ubuntu1.3, automatic), libmpfr4:i386 (3.1.0-3ubuntu2, automatic), ma$
+Upgrade: libc-bin:i386 (2.15-0ubuntu10.3, 2.15-0ubuntu10.4), libc6:i386 (2.15-0ubuntu10.3, 2.15-0ubuntu10.$
+End-Date: 2013-07-15  09:00:17
+
+Start-Date: 2013-07-15  09:20:36
+Install: rpm2cpio:i386 (4.9.1.1-1ubuntu0.1, automatic), librpmbuild2:i386 (4.9.1.1-1ubuntu0.1, automatic),$
+End-Date: 2013-07-15  09:20:57
+
+Start-Date: 2013-07-15  09:23:02
+Commandline: apt-get install puppet
+Install: libshadow-ruby1.8:i386 (1.4.1-8build1, automatic), libaugeas0:i386 (0.10.0-0ubuntu4, automatic), $
+End-Date: 2013-07-15  09:23:18
+
+Commandline: apt-get install git
+Install: git-man:i386 (1.7.9.5-1, automatic), liberror-perl:i386 (0.17-1, automatic), git:i386 (1.7.9.5-1)
+End-Date: 2013-07-15  09:25:42
+
+Start-Date: 2013-07-15  09:26:44
+Commandline: apt-get install unattended-upgrades
+Install: unattended-upgrades:i386 (0.76ubuntu1)
+End-Date: 2013-07-15  09:26:48
+
+Start-Date: 2013-07-16  08:40:03
+Commandline: apt-get install puppetmaster
+Install: puppetmaster-common:i386 (3.2.3-1puppetlabs1, automatic), puppetmaster:i386 (3.2.3-1puppetlabs1)
+End-Date: 2013-07-16  08:40:09
+
+
+
