@@ -1,0 +1,52 @@
+Packages updated on first apt-get update on 07.03.13:
+
+Start-Date: 2013-07-03  08:33:34
+Commandline: apt-get -o APT::Status-Fd=4 -o APT::Keep-Fds::=5 -o APT::Keep-Fds::=6 -q -y --no-remove $
+Install: lvm2:i386 (2.02.66-4ubuntu7.1), libdevmapper-event1.02.1:i386 (1.02.48-4ubuntu7.1, automatic$
+End-Date: 2013-07-03  08:33:37
+
+Start-Date: 2013-07-03  08:33:44
+Commandline: apt-get -o APT::Status-Fd=4 -o APT::Keep-Fds::=5 -o APT::Keep-Fds::=6 -q -y --no-remove $
+Install: libnl-3-200:i386 (3.2.3-2ubuntu2, automatic), linux-generic-lts-quantal:i386 (3.5.0.23.30), $
+End-Date: 2013-07-03  08:34:17
+
+Start-Date: 2013-07-03  08:34:19
+Commandline: apt-get -o APT::Status-Fd=4 -o APT::Keep-Fds::=5 -o APT::Keep-Fds::=6 -q -y --no-remove $
+Install: libpci3:i386 (3.1.8-2ubuntu5, automatic), pciutils:i386 (3.1.8-2ubuntu5)
+End-Date: 2013-07-03  08:34:21
+
+Start-Date: 2013-07-03  08:34:22
+Commandline: apt-get -o APT::Status-Fd=4 -o APT::Keep-Fds::=5 -o APT::Keep-Fds::=6 -q -y --no-remove $
+Install: libusb-1.0-0:i386 (1.0.9~rc3-2ubuntu1, automatic), usbutils:i386 (005-1)
+End-Date: 2013-07-03  08:34:24
+
+Start-Date: 2013-07-03  08:34:38
+Commandline: apt-get -o APT::Status-Fd=4 -o APT::Keep-Fds::=5 -o APT::Keep-Fds::=6 -q -y install task$
+Install: libio-string-perl:i386 (1.08-2, automatic), xz-lzma:i386 (5.1.1alpha+20110809-3, automatic),$
+End-Date: 2013-07-03  08:35:01
+
+Start-Date: 2013-07-03  08:35:05
+Commandline: apt-get -o APT::Status-Fd=4 -o APT::Keep-Fds::=5 -o APT::Keep-Fds::=6 -q -y --no-remove $
+Install: installation-report:i386 (2.46ubuntu1)
+End-Date: 2013-07-03  08:35:06
+
+Start-Date: 2013-07-03  08:38:24
+Commandline: apt-get -o APT::Status-Fd=4 -o APT::Keep-Fds::=5 -o APT::Keep-Fds::=6 -q -y install mini$
+Install: popularity-contest:i386 (1.53ubuntu1), python-crypto:i386 (2.4.1-1ubuntu0.1), libkeyutils1:i$
+End-Date: 2013-07-03  08:41:27
+
+Start-Date: 2013-07-03  08:41:40
+Commandline: apt-get -o APT::Status-Fd=4 -o APT::Keep-Fds::=5 -o APT::Keep-Fds::=6 -q -y --no-remove $
+Install: os-prober:i386 (1.51ubuntu3, automatic), libfreetype6:i386 (2.4.8-1ubuntu2.1, automatic), gr$
+End-Date: 2013-07-03  08:41:46
+
+Start-Date: 2013-07-03  08:41:49
+Commandline: apt-get -o APT::Status-Fd=4 -o APT::Keep-Fds::=5 -o APT::Keep-Fds::=6 -q -y --no-remove $
+Install: grub2-common:i386 (1.99-21ubuntu3.9, automatic), grub-pc:i386 (1.99-21ubuntu3.9), grub-gfxpa$
+End-Date: 2013-07-03  08:41:55
+
+Start-Date: 2013-07-03  08:44:45
+Commandline: apt-get -o APT::Status-Fd=4 -o APT::Keep-Fds::=5 -o APT::Keep-Fds::=6 -q -y --no-remove $
+Install: libnss3:i386 (3.14.1-0ckbi1.93ubuntu.0.12.04.1, automatic), libcryptsetup4:i386 (1.4.1-2ubun$
+End-Date: 2013-07-03  08:45:08
+
