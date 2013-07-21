@@ -26,20 +26,15 @@ init(1)─┬─mountall(292)
         └─getty(22050)
 
 
-Kernal:
-
-F   UID   PID  PPID PRI  NI    VSZ   RSS WCHAN  STAT TTY        TIME COMMAND   					
+Started by init:
+F   UID   PID  PPID PRI  NI    VSZ   RSS WCHAN  STAT TTY        TIME COMMAND   
 4     0     1     0  20   0   3536  1960 poll_s Ss   ?          0:02 /sbin/init   
 1     0     2     0  20   0      0     0 kthrea S    ?          0:00 [kthreadd]
-
-
-Started by init script:												Intit script
-
-1     0   292     1  20   0   4636  1292 poll_s S    ?          0:00 mountall --daemon				~/init/mountall.conf				
-1     0   342     1  20   0   2832   604 poll_s S    ?          0:00 upstart-udev-bridge --daemon		~/init/upstart-udev-bridge.conf
-5     0   344     1  20   0   3080  1236 ep_pol Ss   ?          0:00 /sbin/udevd --daemon			~/intit/udev.conf
-1     0   557     1  20   0   2844   356 poll_s S    ?          0:00 upstart-socket-bridge --daemon		~/init/upstart-socket-bridge.conf
-5   101   618     1  20   0  31060  2176 poll_s Sl   ?          0:16 rsyslogd -c5				~/init/rsyslogd.conf
+1     0   292     1  20   0   4636  1292 poll_s S    ?          0:00 mountall --daemon
+1     0   342     1  20   0   2832   604 poll_s S    ?          0:00 upstart-udev-bridge --daemon
+5     0   344     1  20   0   3080  1236 ep_pol Ss   ?          0:00 /sbin/udevd --daemon
+1     0   557     1  20   0   2844   356 poll_s S    ?          0:00 upstart-socket-bridge --daemon
+5   101   618     1  20   0  31060  2176 poll_s Sl   ?          0:16 rsyslogd -c5
 
 
 Started by the kernal Daemon Kthread:
