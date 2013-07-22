@@ -1,0 +1,7 @@
+[0;32mInfo: Retrieving plugin[0m
+[0;32mInfo: Caching catalog for ateam.ilab.cs.uoregon.edu[0m
+[0;32mInfo: Applying configuration version '1374534166'[0m
+[mNotice: /Stage[main]/Sshd/File[/etc/ssh/sshd_config]/ensure: defined content as '{md5}8caefdd9e251b7cc1baa37874149a870'[0m
+[0;32mInfo: /Stage[main]/Sshd/File[/etc/ssh/sshd_config]: Scheduling refresh of Service[ssh][0m
+[mNotice: /Stage[main]/Sshd/Service[ssh]: Triggered 'refresh' from 1 events[0m
+[mNotice: Finished catalog run in 1.01 seconds[0m
