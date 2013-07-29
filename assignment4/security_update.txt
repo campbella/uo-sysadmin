@@ -1,0 +1,6 @@
+1) Created usergroup classusers to place classmates on the system.
+2) Edited adduser.conf
+	-changed GROUPHOMES=yes to allow home directories to be created as /home/groupname/user
+	to help with better user management
+	-changed DIR_MODE=0750 from 0755. This removes world readable permissions as a default
+	for users.
