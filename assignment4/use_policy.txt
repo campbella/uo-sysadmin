@@ -1,0 +1,41 @@
++ When practical and appropriate, issues involving misuse of the system may be resolved informally
+between users and system administrators.  When necessary, however, matters will be referred to the
+relevant disciplinary systems or legal authorities.
+
++ Impairing, impeding, or interfering with other peoples' normal use of the system (or attempting
+to do so) is prohibited.  Examples of such prohibited activities are (a) denial-of-service
+attacks against computer systems or networks; (b) misuse of mailing lists; (c) sending large
+e-mail messages, or large numbers of e-mail messages to other users in an attempt to "fill up"
+their disk quota; (d) distributing computer viruses.
+
++ Do not participate in "chain" e-mail or pyramid schemes, wheather they involve money or not.
+If you recieve mail urging you to "forward this message to everyone you know," don't.
+
++ Use of your account to send, or to help others to send, unwanted and annoying e-mail is prohibited.
+Factors used to determine whether the mail counts as unwanted and annoying are: (a) the subject
+matter of the mail; (b) the number of recipients of the mail; (c) whether you know the recipients
+of the mail; (d) whether there's a reasonable expectation that the recipients will want to recieve
+your message; (e) whether you persist in sending messages after the recipients have requested you to stop.
+
++ Unauthorized use of the system is prohibited.  Assisting such unauthorized use is also prohibited.
+Examples include: (a) sharing your password with someone else; (b) using someone else's account;
+(c) accessing files owned by another user that would not normally be accessible to you; (d)
+concealing your identity (or impersonating someone else) while using, or attempting to obtain, computing
+or network services.  
+
++ You are presumed to be responsible for activities carried out under your account; hence, you must take
+all reasonable precautions to safeguard your account, including picking a good password, safeguarding
+it against disclosure, protecting your files appropriately, logging out from terminal sessions, etc.
+
++ Subverting, or attempting to subvert, security mechanisms on the system is prohibited. Examples:
+(a) using software "sniffers" or hardware devices to access network communications not intended
+for you; (b) running programes to find or exploit security flaws in installed software; (c) guessing
+or attempting to "crack" passwords of other users.
+
++ Use of the system to gain, or attempt to gain, unauthorized access to other systems is prohibited
+
++Use of the system must comply with federal, state, and local law, including (but not limited to)
+laws concerning (a) copyright and other intellectual property; (b) software piracy and other
+computer crimes; (c) obscenity and pornography; (d) fraud; (e) libel and slander.
+
+Sources: http://pubpages.unh.edu/notes/ethics.html
