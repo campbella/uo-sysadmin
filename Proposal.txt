@@ -1,0 +1,38 @@
+Goals:
+----------
+
+To install and configure a Jabber protocol IM client onto our server and allow classmates to talk to each other. If we can get everyone in the class to have individual conversations with each other as well as a group message session (using a client like pidgin on their personal machines), we will consider the project a success.
+
+
+User Effects and Support:
+---------------------------
+
+Obviously, this will enable the users to be able to message each other. This will also give them a chat account in addition to thier account on the server itself. Some potential user support issues are:
+
+usr/pwd recovery
+users needing assitance with setting up clients
+blocking other users
+assitance with how to iniate group and single chat
+
+Security
+---------
+
+One of the major reasons we chose Jabber over IRC is security. IRC sends evrything over a specific range of ports including usr and pwd. However Jabber integrates with the Transport LAyer Security Protocol. 
+However some potential security threats are:
+
+Spearfishing:
+  A spammer could attempt to get onto our server and posed as us[the admins] and tried to obtain senstive info from our users. Although with our savvy user base I don't forsee this as a big issue.
+
+User's Chat Account Compromised:
+	A user's account could be compromised by a spammer or by some other entity. In this case we would remove the account and set up a new one with the user and make sure they create a secure password and reiterate the importance of not giving away login credentials.
+
+Our server being compromised:
+	Weather it be by remote or physical accsess someone could try and install some software to spam or record our user's  chat logs. Ths should be avoidied by security basics like keepin g a swecure passowrd on our system, logging out when we leave the room and keeping up to date with security patches.
+
+Since with Jabber it's we can keep the server private and only allow users in our class to use the chat server most security problems that come with a naive user base are minimal. Also if soemeone is messing with our server it's a very small list of suspects. And out of that small list of suspects it's most likley Nathan.
+
+Work Needed
+-----------
+
+We are going to need to install the Prodsy Jabber Client. We then need to addusers and 
+
