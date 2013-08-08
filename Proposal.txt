@@ -33,6 +33,7 @@ Since with Jabber it's we can keep the server private and only allow users in ou
 
 Work Needed
 -----------
-
-We are going to need to install the Prodsy Jabber Client. We then need to addusers and 
+We are going to need to install the Prodsy Jabber Client. We then need to addusers or enable them to add themselves.
+Configure our jabber client to be able to connect in such a way to bypass the port filters and to have the features we want.
+It doesn't sound like a lot but we can be assured to always run into some sort of difficutly configuring it how we want.
 
