@@ -2,11 +2,20 @@
 between users and system administrators.  When necessary, however, matters will be referred to the
 relevant disciplinary systems or legal authorities.
 
++ Prohibits, among other things, lewd or indecent conduct, threat of imminent physical harm, sexual
+or other harassment, stalking, forgery, intentional disruption, and damaging or destroying property (electronic or otherwise)
+
++ We ask for users to keep in mind the use of limited resources due to the shared nature of the system, especially
+timesharing CPU cycles, dial-in modem time, disk space, or internet bandwidth.
+
 + Impairing, impeding, or interfering with other peoples' normal use of the system (or attempting
 to do so) is prohibited.  Examples of such prohibited activities are (a) denial-of-service
-attacks against computer systems or networks; (b) misuse of mailing lists; (c) sending large
+attacks against computer systems or networks or actions that result in the denial of 
+service to other users by triggering system security features, or intentionally misconfiguring equipment
+to render it unusable; (b) misuse of mailing lists; (c) sending large
 e-mail messages, or large numbers of e-mail messages to other users in an attempt to "fill up"
-their disk quota; (d) distributing computer viruses.
+their disk quota; (d) distributing computer viruses; (e) unauthorized use of resources; (f) interference by the
+unauthorized display of output on remote devices without the assent of the individual currently using the device.
 
 + Do not participate in "chain" e-mail or pyramid schemes, wheather they involve money or not.
 If you recieve mail urging you to "forward this message to everyone you know," don't.
@@ -21,7 +30,7 @@ your message; (e) whether you persist in sending messages after the recipients h
 Examples include: (a) sharing your password with someone else; (b) using someone else's account;
 (c) accessing files owned by another user that would not normally be accessible to you; (d)
 concealing your identity (or impersonating someone else) while using, or attempting to obtain, computing
-or network services.  
+or network services; (d) accessing clearly confidential files that may be inadvertently publicly readable.
 
 + You are presumed to be responsible for activities carried out under your account; hence, you must take
 all reasonable precautions to safeguard your account, including picking a good password, safeguarding
@@ -32,10 +41,74 @@ it against disclosure, protecting your files appropriately, logging out from ter
 for you; (b) running programes to find or exploit security flaws in installed software; (c) guessing
 or attempting to "crack" passwords of other users.
 
-+ Use of the system to gain, or attempt to gain, unauthorized access to other systems is prohibited
++ Use of the system to gain, or attempt to gain, unauthorized access to other systems is prohibited.
 
 +Use of the system must comply with federal, state, and local law, including (but not limited to)
 laws concerning (a) copyright and other intellectual property; (b) software piracy and other
 computer crimes; (c) obscenity and pornography; (d) fraud; (e) libel and slander.
 
-Sources: http://pubpages.unh.edu/notes/ethics.html
++ Illegally copied software is prohibited as well as making materials available for others to retrieve or use
+that are otherwise copyrighted.  In general, every document, image, or sound is copy written upon creation, and
+may only be used or redistributed with the permission of the copyright holder.
+
+Sources: http://pubpages.unh.edu/notes/ethics.html, https://it.uoregon.edu/acceptable-use-policy
+
+
+
+<html><body><h1>Ateam Acceptible Use Policy</h1>
++ When practical and appropriate, issues involving misuse of the system may be resolved informally
+between users and system administrators.  When necessary, however, matters will be referred to the
+relevant disciplinary systems or legal authorities.<br><br>
+
++ Prohibits, among other things, lewd or indecent conduct, threat of imminent physical harm, sexual
+or other harassment, stalking, forgery, intentional disruption, and damaging or destroying property (electronic or otherwise)<br><br>
+
++ We ask for users to keep in mind the use of limited resources due to the shared nature of the system, especially
+timesharing CPU cycles, dial-in modem time, disk space, or internet bandwidth.<br><br>
+
++ Impairing, impeding, or interfering with other peoples' normal use of the system (or attempting
+to do so) is prohibited.  Examples of such prohibited activities are (a) denial-of-service
+attacks against computer systems or networks or actions that result in the denial of
+service to other users by triggering system security features, or intentionally misconfiguring equipment
+to render it unusable; (b) misuse of mailing lists; (c) sending large
+e-mail messages, or large numbers of e-mail messages to other users in an attempt to "fill up"
+their disk quota; (d) distributing computer viruses; (e) unauthorized use of resources; (f) interference by the
+unauthorized display of output on remote devices without the assent of the individual currently using the device.<br><br>
+
++ Do not participate in "chain" e-mail or pyramid schemes, wheather they involve money or not.
+If you recieve mail urging you to "forward this message to everyone you know," don't.<br><br>
+
+
++ Use of your account to send, or to help others to send, unwanted and annoying e-mail is prohibited.
+Factors used to determine whether the mail counts as unwanted and annoying are: (a) the subject
+matter of the mail; (b) the number of recipients of the mail; (c) whether you know the recipients
+of the mail; (d) whether there's a reasonable expectation that the recipients will want to recieve
+your message; (e) whether you persist in sending messages after the recipients have requested you to stop.<br><br>
+
++ Unauthorized use of the system is prohibited.  Assisting such unauthorized use is also prohibited.
+Examples include: (a) sharing your password with someone else; (b) using someone else's account;
+(c) accessing files owned by another user that would not normally be accessible to you; (d)
+concealing your identity (or impersonating someone else) while using, or attempting to obtain, computing
+or network services; (d) accessing clearly confidential files that may be inadvertently publicly readable.<br><br>
+
++ You are presumed to be responsible for activities carried out under your account; hence, you must take
+all reasonable precautions to safeguard your account, including picking a good password, safeguarding
+it against disclosure, protecting your files appropriately, logging out from terminal sessions, etc.<br><br>
+
++ Subverting, or attempting to subvert, security mechanisms on the system is prohibited. Examples:
+(a) using software "sniffers" or hardware devices to access network communications not intended
+for you; (b) running programes to find or exploit security flaws in installed software; (c) guessing
+or attempting to "crack" passwords of other users.<br><br>
+
++ Use of the system to gain, or attempt to gain, unauthorized access to other systems is prohibited.<br><br>
+
++Use of the system must comply with federal, state, and local law, including (but not limited to)
+laws concerning (a) copyright and other intellectual property; (b) software piracy and other
+computer crimes; (c) obscenity and pornography; (d) fraud; (e) libel and slander.<br><br>
+
++ Illegally copied software is prohibited as well as making materials available for others to retrieve or use
+that are otherwise copyrighted.  In general, every document, image, or sound is copy written upon creation, and
+may only be used or redistributed with the permission of the copyright holder.<br><br>
+
+Sources: http://pubpages.unh.edu/notes/ethics.html, https://it.uoregon.edu/acceptable-use-policy
+</body></html>
