@@ -1,0 +1,57 @@
+Goals and Verification
+======================
+
+Our goal was to install Nagios and use it to monitor and control the system(check services, schedule downtime etc) We verified this by 
+a) being able to load the nagios web admin pages
+b) confirng that it was monitoring our server with the correct information
+c) issuing some commands
+
+We were succsefullty able to do complete all three of these.
+
+Effects on User base
+=====================
+
+	Using Nagios effectivly our users shouldn't be able to tell that anything is diffrent. By this we mean that Nagios is supposed to be used to cut off problems before they even happen. So our users won't see anything but a smooth running system.(most of the time) 
+
+	So while our users aren't going to run into problems with Nagios itself, Nagios will most lilkley lead to interactions with our users in the attempt to keep the system running smoothly. For example if we see that one particular user is too much disk space we would have to go talk with the user to resolve the issue.
+
+Security
+=========
+
+  Since Nagios is only used by the sys admins it's very unlikely (but not impossible) for the account to be compromised by basic social engineering attacks like spearfishing. 
+
+  However this could still leave us vulnerable to other attacks. However this is when the port filtering really works in our favor. Since the port filters block accsess but to minimal network services it leaves a loit less holes for a potential hacker to get thru. As such if we were to add moire servers to our network we would keep this as adedicated monitoring server. 
+
+  We also made sure to make sure the nagios external command file and check result directory had  the proper permissions such that just the "Nagios user" only can write to them so our users or someone who has compromised our machine can't issue commands to Nagios.
+
+  While it seems like common sense, it is worth noting that we make sure to log off everytime we leave the computer and picked a strong Nagios Admin password to prevent unatuhorized local accsess or our password being easily cracked.
+
+
+Future Work Needed
+===================
+  The inital install and configuration of Nagios was fairly straightforward and will be discussed in the next section. As for future work,s ome foresseable jobs would be adding new servers to be monitored, troubleshooting Nagios's mysql database in case of a problem, security audits of the new added servers.
+
+  However the most work will probably come on the human side of things, such as the continued education on how to use Nagios most effeciently.
+
+
+Documentation
+==============
+	Since there is no end user interface for Nagios there isn't much user documentation required.
+
+	As for sys admin documentaion for Nagios it can be found here:
+
+		Wiki      - http://support.nagios.com/wiki/index.php/Main_Page
+		Library   - http://library.nagios.com/
+		FAQs  	  - http://support.nagios.com/knowledgebase/faqs
+
+	The install guide can be found here:
+
+		https://help.ubuntu.com/12.04/serverguide/nagios.html
+
+		However after following this install guide Nagios will still not be able to recive external commands to remedy this enter the following commands:
+
+		 dpkg-statoverride --update --add nagios www-data 2710 /var/lib/nagios3/rw
+		 dpkg-statoverride --update --add nagios www-data 751 /var/lib/nagios3
+
+		 	
+
