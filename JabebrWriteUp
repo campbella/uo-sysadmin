@@ -1,0 +1,82 @@
+Goals
+======
+
+We succsefuly installed and configured ejabberd on our machine. It succsefully registers users, and runs the server. Unfortunatly, after hours of work we were not able to get a client to connect to our server. Even using SSH tunnels we were not ablke to get the clients to authenticate with the server. Whether or not this was because of Port filtering issues or something with our ejabberd is unclear.
+
+User Effects and Support
+========================
+
+Since we couldn't get the clients to actually connect to the server there wasn't any real affect top our user base except for a unfufilled promise which is quite frustrating. However if we werer to function under the assumption we'd eventually get a working server ejabberd gives us the tools to resolve the many user support issues. For example:
+
+  pwd recovery
+  -------------
+  To recvover a password we can use the the following command to set a new password for the user 
+  		ejabberdctl set-password user server password
+
+  dealing misbehaving users
+  -------------------------
+  Ejabberd gives us the option of kicking a user out of a session (ejabberdctl kick-session user host resource reason) or banning a user (ejabberdctl ban-account user host reason).
+
+  New Users
+  ----------
+  Say a new user(s) joins the jabber server and we want that user to be on the other user's roster. With ejabberd we can make sure everybody is on everybody elses's roster with ejabberdctl push-alltoall server group or we can simply add the new user to the roster of specific users by using ejabberdctl add-rosteritem user1 server1 user2 server2
+
+  Inactive Users, Rooms and Messages
+  ----------------------------
+  To prevent the frustration of being inauditaed with empty chatrooms, ancient messages and users that are never there we can remove incative users, messages and cahtrooms by using ejabberdctl delete-older-users days muc-purge days, delete-older-messages days, and  delete-older-users days respectivley. Where days is the amount of time that the given resource needs to be inactive for it to be deleted.
+
+Security
+=========
+Our chat server is pretty secure, unfortunatly it's secure like putting in welded tiatnium crate in the marina trench. Sure it's secure but you can't get to it either. In fact as mentioned earlier it's an authenticate with anything. Once it gets up and running however, it is set up to be using SSL encryption. Addressing security threats in our proposal:
+
+  Spearfishing
+  -------------
+  If a spammer tries posing as one of the admins once we found out about it we could ban that user as mentioned earlier. We must also inform our user community of which accounts to trust as admins.
+
+  User's Chat Account Compromised
+  --------------------------------
+  If a user's chat account is compromised we can reset the password using ejabberdctl and send it to the proper user and remind the user to pick a stronger password and not to give thier password to anyone.
+
+  Our server being compromised
+  -----------------------------
+	If our server is compromised we would immediatly reset our passwords along with our users and then scan for malicous programs before putting our serverback up for users. However the best way to deal with getting hacked is to try and not get there in the first place which can be down by  keeping a swecure passowrd on our system, logging out when we leave the room and keeping up to date with security patches.
+
+ As mentioned in the proposal we're keeping the user base restricted to the sp security problems that come with a naive user base are minimal. Also if soemeone is messing with our server it's a very small list of suspects. And out of that small list of suspects it's most likley Nathan.
+
+Future Work Needed
+===================
+
+The most obvious work that needs to be done is enabling the server to be able to properly. However once the basic setup is complete the work needed would be managing users, upgrading the ejabberd when needed and backing up the user database in case of a system emergency. To back up the user databse we can use ejabberdctl again. First by creating a back up by ejabberdctl backup filepath and then setting it as the fallback by ejabberdctl install-fallback filepath.
+
+Documentation
+=============
+SysAdmin documentation is as follows
+
+  Install Guide
+  -------------
+  https://help.ubuntu.com/community/SettingUpJabberServer
+
+  Ejabberdctl ManPage
+  ---------------------
+  http://manpages.ubuntu.com/manpages/jaunty/man8/ejabberdctl.8.html
+
+  Ejabberd Install & Operation Guide
+  -----------------------------------
+  http://www.ejabberd.im/files/doc/guide.html
+
+  Ejabberd Forums
+  ---------------
+  http://www.ejabberd.im/
+
+  As for the user documentation this will get them as far as we got:
+  1) download and install pidgin from http://www.pidgin.im/
+  2) create an ssh tunnel to our server using ssh -L 5222:ateam.ilab.cs.uoregon.edu:5222 youraccount@ateam.ilab.cs.uoregon.edu
+  3) Open pidgin and click add an account on pidgin
+  4) In the Protocol dropdown menu select XMPP
+  5) In the username dialog, enter your jabber id
+  6) In the Domain dialog enter localhost
+  7) Enter your password in the password dialog
+  8) Under the advanced tabbed enter: ateam.ilab.cs.uoregon.edu in the conenct server dialog
+  9) Select Use Encryption when available from the connection security dropdown menu
+  10) Click add in the bottom right corner
+
